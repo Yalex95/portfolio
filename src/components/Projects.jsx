@@ -23,6 +23,7 @@ const projects = ({projects}) => {
                 </div>
             </div>
             <div className="box">
+                {/* create random id */}
                 {filteredItems.map(({id,name,icon,description, category, link}) =>(
                     <div key={id} className="project-item">
                         <div className=" bg-gray project-img">

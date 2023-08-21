@@ -12,8 +12,16 @@
         "description":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit, autem, commodi doloremque expedita tenetur nesciunt possimus praesentium laborum quod hic pariatur, cum exercitationem rerum iusto non. Nesciunt non a nulla!",
         "technologies": [
             {
-                "icon": "",
-                "tech":""
+                "icon": "fa-brands fa-wordpress",
+                "tech":"Wordpress theme development"
+            },
+            {
+                "icon": "fa-brands fa-php",
+                "tech":"PHP"
+            },
+            {
+                "icon": "fa-brands fa-react",
+                "tech":"React JS development"
             }
         ]
     },

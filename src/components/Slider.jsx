@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { generateUniqueId } from '../utils/utils'; // Path to your utils file
 
 import Slider from 'react-slick';
 
@@ -13,33 +14,23 @@ class Sliders extends Component{
             slidesToScroll: 1,
         }
         
+    const { technologies } = this.props;
+   
     return (
         <>
           <Slider {...settings}>
-                        <div className="slider-item">
-                            <div className="d-flex align-items-center text-center bg-bby-blue text-white item py-5">
-                                <div className="m-auto">
-                                    <FontAwesomeIcon icon=" fa-brands  fa-wordpress" />
-                                    <h6>Wordpress theme <span>development</span></h6>
-                                </div>
-                            </div>
+            
+          {technologies.map(({icon,tech})=>(
+                                
+                <div key={generateUniqueId()} className="slider-item">
+                    <div className="d-flex align-items-center text-center bg-bby-blue text-white item py-5">
+                        <div className="m-auto">
+                             <FontAwesomeIcon icon={icon} />
+                            <h6>{tech}</h6>
                         </div>
-                        <div className="slider-item">
-                            <div className="d-flex align-items-center text-center bg-blue-bb text-white item py-5">
-                                <div className="m-auto">
-                                <FontAwesomeIcon icon="fa-brands fa-php" />
-                                <h6>PHP</h6>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="slider-item">
-                            <div className="d-flex align-items-center text-center bg-blue-bbd text-white item py-5">
-                                <div className="m-auto">
-                                   <FontAwesomeIcon icon="fa-brands fa-react" />
-                                    <h6>React development</h6>
-                                </div>
-                            </div>
-                        </div>
+                    </div>
+                </div>
+                                ))}
     
           </Slider>
 

@@ -11,6 +11,7 @@ const Contact = ({contact}) => {
                     <p className='text-white'>{text}</p>
                     <h4 className="text-center text-white text-shadow">{title}!</h4>
                     <ul className="d-flex justify-content-center fs-4 text-gray">
+                        {/* create random id */}
                         {links.map(({id,href,data,icon})=>(
                             <li key={id} className="me-3"><a href={href} className="text-decoration-none text-gray"><FontAwesomeIcon icon={icon} className='me-3'/>{data}</a></li>
                         ))}

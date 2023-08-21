@@ -16,7 +16,7 @@ const Tech = ({tech}) => {
                 </div>
                  <div className="col-6 p-0">
                     <div className="tech-slider ">
-                        <Sliders/>
+                        <Sliders technologies = {technologies}/>
                     </div>
                 </div>
             </div>
