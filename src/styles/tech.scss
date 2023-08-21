@@ -1,0 +1,20 @@
+#tech{
+    
+}
+.tech-slider{
+    height: 100%;
+    .slick-slider,.slider-item , .slick-slide > div{
+        height: 100%;
+    }
+}
+.tech-slider .slick-list, .tech-slider .slick-track{
+height: 100%;
+}
+.item{
+    padding: 30px 20px;
+    height: 100%;
+}
+.item i{
+    font-size: 70px;
+    margin-bottom: 2rem;
+}

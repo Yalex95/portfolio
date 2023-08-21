@@ -1,0 +1,15 @@
+
+nav{
+    padding: 1.5rem 0 !important ;
+    li a{
+        font-size: 18px !important;
+        color: #fff !important;
+        padding: 0 1rem !important;
+        
+    }
+    li a.active,a:hover{
+        background-color: #3E4E5D;
+        border-radius: 15px;
+    }
+}
+

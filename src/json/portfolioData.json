@@ -1,0 +1,91 @@
+{
+    "banner": {
+            "title":"front-end",
+            "subtitle":"web developer",
+            "description":"Hello there! I'm Yeris, and I am a passionate front-end web developer with a deep love for crafting captivating digital experiences. My journey in the world of web development has led me to master a diverse array of front end web tools and technologies."
+        }
+    ,
+    "tech": {
+        "title":"LOREM IPSUM DOLOR SIT AMET CONSECTETUR",
+        "subtitle":"LOREM IPSUM DOLOR",
+        "paragraph":"LOREM IPSUM DOLOR",
+        "description":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit, autem, commodi doloremque expedita tenetur nesciunt possimus praesentium laborum quod hic pariatur, cum exercitationem rerum iusto non. Nesciunt non a nulla!",
+        "technologies": [
+            {
+                "icon": "",
+                "tech":""
+            }
+        ]
+    },
+    "projects":[
+        
+        {
+            "id":1, 
+            "name": "Item 1",
+            "icon": "<i className='fa-solid fa-desktop'></i>", 
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium maiores harum aliquam modi! Nulla quam soluta doloribus quas quasi corrupti corporis perspiciatis, sed laudantium amet rem, possimus quisquam. Aspernatur, eius.", 
+            "category": "wordpress",
+            "link":""
+            
+        },
+        {   
+            "id":2, 
+            "name": "Item 1",
+            "icon": "<i className='fa-solid fa-desktop'></i>", 
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium maiores harum aliquam modi! Nulla quam soluta doloribus quas quasi corrupti corporis perspiciatis, sed laudantium amet rem, possimus quisquam. Aspernatur, eius.", 
+            "category": "react",
+            "link":""
+            },
+        {   
+            "id":3, 
+            "name": "Item 1",
+            "icon": "<i className='fa-solid fa-desktop'></i>", 
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium maiores harum aliquam modi! Nulla quam soluta doloribus quas quasi corrupti corporis perspiciatis, sed laudantium amet rem, possimus quisquam. Aspernatur, eius.", 
+            "category": "php",
+            "link":""
+            },
+        {   
+            "id":4, 
+            "name": "Item 1",
+            "icon": "<i className='fa-solid fa-desktop'></i>", 
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium maiores harum aliquam modi! Nulla quam soluta doloribus quas quasi corrupti corporis perspiciatis, sed laudantium amet rem, possimus quisquam. Aspernatur, eius.", 
+            "category": "wordpress",
+            "link":""
+            }
+        ],
+    "contact": {
+            "title":"contact me!",
+            "text": "If you're looking for a front-end web developer who is equally comfortable with JavaScript wizardry, HTML artistry, CSS elegance, PHP magic, WordPress wizardry, and REST API mastery, then look no further. I'm excited to bring my passion, skills, and creativity to the table, creating experiences that resonate and leave a lasting impact. Feel free to reach out, and let's collaborate to turn your digital dreams into reality. Together, we can sculpt a digital world that's as functional as it is beautiful.",
+            "links": [
+                {
+                    "id":1,
+                    "href": "tel:9632337458",
+                    "data": "963 233 74 58",
+                    "icon": "fa-solid fa-phone"
+                },{
+                    
+                    "id":12,
+                    "href": "mailto:yerisaguilar@gmail.com",
+                    "data": "yerisaguilar@gmail.com",
+                    "icon": "fa-solid fa-envelope"
+                }
+            ]
+        },
+    "footer": [
+        {    
+            "id":13,
+            "data":"",
+            "icon": "fa-brands fa-github"
+        },{
+            
+            "id":14,
+            "icon": "fa-brands fa-stack-overflow"
+        },{
+            
+            "id":15,
+            "data":"https://www.linkedin.com/in/yeris-alejandra-aguilar-gordillo-a07aa9191/",
+            "icon": "fa-brands fa-linkedin"
+        }
+    ]
+    
+}

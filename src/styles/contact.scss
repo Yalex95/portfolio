@@ -1,0 +1,13 @@
+#contact{
+    
+}
+.text-shadow{
+    text-shadow: 3px 1px #558abb;
+}
+.contact-form{
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+#contact ul li::marker{
+    content: '';
+}

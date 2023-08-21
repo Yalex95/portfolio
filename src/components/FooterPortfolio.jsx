@@ -1,0 +1,27 @@
+import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+const FooterPortfolio = ({footer}) => {
+  return (
+    
+    
+    <footer className="bg-gray py-4">
+        <div className="container">
+            <div className="row">
+                
+                <div className="col-4"></div>
+                <div className="col-4 d-flex justify-content-center fs-2">
+                  {footer.map(({id,data,icon})=>(
+                    <a key={id} href={data} className="text-white me-3 text-decoration-none"><FontAwesomeIcon icon={icon} /> </a>
+                    
+                  ))}
+                </div>
+                <div className="col-4 d-flex justify-content-center fs-2">
+                </div>
+            </div>
+        </div>
+    </footer>
+  )
+}
+
+export default FooterPortfolio

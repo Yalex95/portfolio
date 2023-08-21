@@ -1,0 +1,80 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,1000&display=swap');
+
+body{
+    font-family: 'Nunito Sans', sans-serif;
+    overflow-x: hidden;
+    color: #000;
+}
+
+h1{
+    color:#fff;
+    font-weight: 1000;
+    text-transform: uppercase;
+    text-shadow: 3px 1px #558abb;
+}
+h2{
+    text-transform: uppercase;
+    font-weight: bold;
+
+}
+h3{
+ font-weight: 700;
+ text-transform: uppercase;
+}
+h4{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+h5{
+    text-transform: uppercase;
+}
+h6{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+p{
+    font-size: 16px;
+    color: #9a9c9d;
+}
+.bg-bby-blue{
+    background-color: #00A8CD;
+}
+
+.bg-white{
+    background-color: #FFFFFF;
+}
+.bg-gray{
+    background-color: #3E4E5D;
+}
+.bg-gray-opacity{
+    
+    background: linear-gradient(1800deg, rgba(14,21,39,1) 0%, rgba(26,41,65,1) 100%);
+}
+.bg-blue-bb{
+    background-color: #1BB1D4;
+}
+.bg-blue-bbd{
+    background-color: #33B9D4;
+}
+.text-white{
+    color: #fff;
+}
+.text-blue{
+    color: #1BB1D4;
+}
+.text-gray{
+    color: #3E4E5D;
+}
+.bg-blue-opacity{
+    /* change it ro rgba */
+    background-color: #00A8CD;
+}
+/* buttons */
+.contact-btn{
+    background-color:#33B9D4 ;
+    border-radius: 10px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 900;
+}
