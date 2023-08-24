@@ -6,10 +6,10 @@
         }
     ,
     "tech": {
-        "title":"LOREM IPSUM DOLOR SIT AMET CONSECTETUR",
-        "subtitle":"LOREM IPSUM DOLOR",
-        "paragraph":"LOREM IPSUM DOLOR",
-        "description":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit, autem, commodi doloremque expedita tenetur nesciunt possimus praesentium laborum quod hic pariatur, cum exercitationem rerum iusto non. Nesciunt non a nulla!",
+        "title":"Why Hire Me?",
+        "subtitle":"I'm Experienced Front-End Developer",
+        "paragraph":"with a Track Record of Excellence",
+        "description":"I skillfully navigated a diverse technology stack, including HTML, CSS, SASS, Bootstrap, JavaScript, and jQuery. I demonstrated proficiency in version control using Git, with a particular focus on platforms like GitHub and Bitbucket. I seamlessly integrated RESTful APIs, enhancing the functionality and scope of projects. Furthermore, I contributed to WordPress theme development, employing tools like ACF to create robust and tailored solutions. My expertise also extended to React.js, where I crafted dynamic and engaging web experiences.",
         "technologies": [
             {
                 "icon": "fa-brands fa-wordpress",
@@ -29,35 +29,35 @@
         
         {
             "id":1, 
-            "name": "Item 1",
-            "icon": "<i className='fa-solid fa-desktop'></i>", 
+            "name": "Franchoice",
+            "icon": "fa-brands fa-wordpress", 
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium maiores harum aliquam modi! Nulla quam soluta doloribus quas quasi corrupti corporis perspiciatis, sed laudantium amet rem, possimus quisquam. Aspernatur, eius.", 
             "category": "wordpress",
-            "link":""
+            "link":"https://www.franchoice.com/"
             
         },
         {   
             "id":2, 
-            "name": "Item 1",
-            "icon": "<i className='fa-solid fa-desktop'></i>", 
+            "name": "Groovy Hues",
+            "icon": "fa-brands fa-wordpress", 
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium maiores harum aliquam modi! Nulla quam soluta doloribus quas quasi corrupti corporis perspiciatis, sed laudantium amet rem, possimus quisquam. Aspernatur, eius.", 
-            "category": "react",
-            "link":""
+            "category": "wordpress",
+            "link":"https://groovyhues.com/"
             },
         {   
             "id":3, 
-            "name": "Item 1",
-            "icon": "<i className='fa-solid fa-desktop'></i>", 
+            "name": "Bumble Blinds",
+            "icon": "fa-brands fa-wordpress", 
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium maiores harum aliquam modi! Nulla quam soluta doloribus quas quasi corrupti corporis perspiciatis, sed laudantium amet rem, possimus quisquam. Aspernatur, eius.", 
-            "category": "php",
-            "link":""
+            "category": "wordpress",
+            "link":"https://bumblebeeblinds.com/"
             },
         {   
             "id":4, 
             "name": "Item 1",
-            "icon": "<i className='fa-solid fa-desktop'></i>", 
+            "icon": "fa-solid fa-code", 
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium maiores harum aliquam modi! Nulla quam soluta doloribus quas quasi corrupti corporis perspiciatis, sed laudantium amet rem, possimus quisquam. Aspernatur, eius.", 
-            "category": "wordpress",
+            "category": "react",
             "link":""
             }
         ],
@@ -76,17 +76,24 @@
                     "href": "mailto:yerisaguilar@gmail.com",
                     "data": "yerisaguilar@gmail.com",
                     "icon": "fa-solid fa-envelope"
+                },{
+                    
+                    "id":13,
+                    "href": "mailto:yerisaguilar@gmail.com",
+                    "data": "yerisaguilar95@gmail.com",
+                    "icon": "fa-solid fa-envelope"
                 }
             ]
         },
     "footer": [
         {    
             "id":13,
-            "data":"",
+            "data":"https://github.com/Yalex95",
             "icon": "fa-brands fa-github"
         },{
             
             "id":14,
+            "data": "https://stackoverflow.com/users/15331013/yeris-aguilar",
             "icon": "fa-brands fa-stack-overflow"
         },{
             

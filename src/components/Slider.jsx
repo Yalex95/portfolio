@@ -8,7 +8,7 @@ class Sliders extends Component{
     render(){
         const settings = {
             dots: false,
-            autoplay: true,
+            autoplay: false,
             arrows: false,
             slidesToShow: 3,
             slidesToScroll: 1,
@@ -20,13 +20,13 @@ class Sliders extends Component{
         <>
           <Slider {...settings}>
             
-          {technologies.map(({icon,tech})=>(
+          {technologies.map((technologies,index)=>(
                                 
                 <div key={generateUniqueId()} className="slider-item">
-                    <div className="d-flex align-items-center text-center bg-bby-blue text-white item py-5">
+                    <div className={`d-flex align-items-center text-center ${'bg-'+index} text-white item py-5`}>
                         <div className="m-auto">
-                             <FontAwesomeIcon icon={icon} />
-                            <h6>{tech}</h6>
+                             <FontAwesomeIcon icon={technologies.icon} />
+                            <h6>{technologies.tech}</h6>
                         </div>
                     </div>
                 </div>

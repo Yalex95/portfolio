@@ -1,4 +1,5 @@
 import React from 'react'
+import { DownloadPDF } from './DownloadPDF'
 // import PropTypes from 'prop-types'
 
 const Hero = ({banner}) => {
@@ -17,6 +18,7 @@ const Hero = ({banner}) => {
                     </div>
                     <p>{description}</p>
                     <a href="#contact" className=" btn contact-btn px-4">Contact me</a>
+                    <DownloadPDF/>
                 </div>
                 <div className="col-9">
                 </div>

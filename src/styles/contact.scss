@@ -1,11 +1,16 @@
 #contact{
-    
+    textarea,input{
+        &:focus{
+            border: 0 !important;
+            outline: none !important;
+        }
+    }
 }
 .text-shadow{
     text-shadow: 3px 1px #558abb;
 }
 .contact-form{
-    border-radius: 10px;
+    padding: 100px 50px;
     background-color: rgba(255, 255, 255, 0.3);
 }
 #contact ul li::marker{
