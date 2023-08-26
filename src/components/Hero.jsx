@@ -1,26 +1,34 @@
 import React from 'react'
 import { DownloadPDF } from './DownloadPDF'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import PropTypes from 'prop-types'
 
-const Hero = ({banner}) => {
+const Hero = ({banner,social}) => {
     const {title, subtitle, description} = banner
   return (
     
     <section id="hero" className="">
-        
-        <canvas id="canvas" className="position-absolute pt-5"></canvas>
-        <div className="container-fluid ">
-            <div className="row">
-                <div className="col-3 offset-md-1 offset-lg-0 z2 bg-gray-opacity  ">
+        <div className="container">
+            <div className="row hero-row">
+                <div className="col-6 z2">
                     <div>
-                        <h3>{title}</h3> 
-                        <h1><span>{subtitle}</span></h1>
+                        <h3 className='mb-0'>{title}</h3> 
+                        <h1>{subtitle}</h1>
                     </div>
-                    <p>{description}</p>
-                    <a href="#contact" className=" btn contact-btn px-4">Contact me</a>
-                    <DownloadPDF/>
+                    <p className='mt-3'>{description}</p>
+                    <div className='d-flex flex-column mt-5'>
+                        
+                            <a href="#contact" className=" btn contact-btn mb-4">Contact me</a>
+                        <div className="social-links mb-3">
+                            {social.map(({id,data,icon})=>(
+                                <a key={id} href={data} className="text-gray me-3 text-decoration-none"><FontAwesomeIcon icon={icon} /> </a>
+                                
+                            ))}
+                        </div>
+                        <DownloadPDF/>
+                    </div>
                 </div>
-                <div className="col-9">
+                <div className="col-6">
                 </div>
             </div>
         </div>

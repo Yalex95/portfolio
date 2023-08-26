@@ -5,6 +5,23 @@
             "description":"Hello there! I'm Yeris, and I am a passionate front-end web developer with a deep love for crafting captivating digital experiences. My journey in the world of web development has led me to master a diverse array of front end web tools and technologies."
         }
     ,
+    "social": [
+        {    
+            "id":13,
+            "data":"https://github.com/Yalex95",
+            "icon": "fa-brands fa-github"
+        },{
+            
+            "id":14,
+            "data": "https://stackoverflow.com/users/15331013/yeris-aguilar",
+            "icon": "fa-brands fa-stack-overflow"
+        },{
+            
+            "id":15,
+            "data":"https://www.linkedin.com/in/yeris-alejandra-aguilar-gordillo-a07aa9191/",
+            "icon": "fa-brands fa-linkedin"
+        }
+    ],
     "tech": {
         "title":"Why Hire Me?",
         "subtitle":"I'm Experienced Front-End Developer",

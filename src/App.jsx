@@ -10,14 +10,18 @@ import data from './json/portfolioData.json'
 
 
 function App() {
-const {banner, tech,projects,contact, footer} = data
+const {banner, social, tech,projects,contact, footer} = data
   return (
     <>
     <Header/>
-    <Hero banner = {banner}/>
+    {/* fix scroll spy */}
+    <div data-bs-spy="scroll" data-bs-target="#nav" data-bs-offset="0" tabindex="0">
+    <Hero banner = {banner} social={social}/>
     <Tech tech = {tech} />
     <Projects projects = {projects} />
     <Contact contact ={contact} />
+
+    </div>
 
     <FooterPortfolio footer = {footer} />
     

@@ -5,11 +5,14 @@ nav{
         font-size: 18px !important;
         color: #fff !important;
         padding: 0 1rem !important;
+        color: #00A8CD !important;
         
     }
     li a.active,a:hover{
-        background-color: #3E4E5D;
-        border-radius: 15px;
+        // background-color: #3E4E5D;
+        // border-radius: 15px;
+        color: #3E4E5D !important;
+        font-weight: 900;
     }
 }
 
