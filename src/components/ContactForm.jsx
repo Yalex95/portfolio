@@ -19,8 +19,9 @@ const publicKey = 'BaZ9p5ykE2CDxA82g';
   };
 
   return (
+    
     <form className="d-flex flex-column" ref={form} onSubmit={sendEmail}>
-      
+      {/* form */}
       <input className="mb-3 p-2 rounded border-0" type="text" name="user_name" placeholder='Name'/>
       <input className="mb-3 p-2 rounded border-0" type="email" name="user_email" placeholder='Email'/>
       <textarea className="mb-3 p-2 rounded border-0"  name="message" placeholder='Your Message' rows="5"/>
