@@ -9,6 +9,7 @@ export const ContactUs = () => {
     e.preventDefault();
 const serviceId='service_omp692l';
 const templateId = 'template_uz1g9nq';
+// console.log(form.current)
 const publicKey = 'BaZ9p5ykE2CDxA82g';
     emailjs.sendForm(serviceId, templateId, form.current, publicKey)
       .then((result) => {
@@ -23,10 +24,10 @@ const publicKey = 'BaZ9p5ykE2CDxA82g';
     <form className="row g-3" ref={form} onSubmit={sendEmail}>
       {/* form */}
       <div className='col-md-6'>
-       <input className="w-100 p-2 rounded border-0" type="text" name="user_name" placeholder='Name'/>
+       <input className="w-100 p-2 rounded border-0" type="text" name="from_name" id="from_name" placeholder='Name'/>
       </div>
       <div className='col-md-6'>
-        <input className="w-100 p-2 rounded border-0" type="email" name="user_email" placeholder='Email'/>
+        <input className="w-100 p-2 rounded border-0" type="email" name="reply_to" id="reply_to" placeholder='Email'/>
       </div>
       <div className='col-md-12'>
         <textarea className="w-100 p-2 rounded border-0"  name="message" placeholder='Your Message' rows="5"/>

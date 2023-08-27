@@ -63,11 +63,18 @@
             },
         {   
             "name": "TO-DO List",
-            "icon": "fa-solid fa-code", 
+            "icon": "fa-brands fa-react", 
             "description": "This project was made with Firebase real time data base and React js framework. *Adds TODO items to database *Delete TODO items to database *updates completed items", 
             "category": "react",
             "link":"https://yalex95.github.io/TodoListCrud/"
-            }
+            },
+            {   
+                "name": "Carpinteria Aguilar",
+                "icon": "fa-brands fa-react", 
+                "description": "This project was made with Firebase real time data base and React js framework.", 
+                "category": "react",
+                "link":"https://yalex95.github.io/CarpinteriaAguilar/"
+                }
         ],
     "contact": {
             "title":"contact me!",
