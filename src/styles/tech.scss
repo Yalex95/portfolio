@@ -11,6 +11,10 @@
   background-color: #40c6e1;
 }
 #tech{
+  .description-text{
+    max-height: 100px;
+    overflow-y: auto;
+  }
     .svg-inline--fa{
         height: 80px;
         margin-bottom: 1rem;

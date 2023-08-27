@@ -1,18 +1,21 @@
-import React from 'react'
+import React, {useRef } from 'react'
 import Sliders from './Slider'
 
-const Tech = ({tech}) => {
+const Tech = ({sectionRefs, tech}) => {
     const {title, subtitle, paragraph,description, technologies} = tech
-  return (
+ 
+    const techRef = useRef(null);
+    sectionRefs.current['tech'] = techRef;
+    return (
     
-    <section id="tech" className="bg-gray">
+    <section id="tech" className="bg-gray" ref={techRef}>
         <div className="container-fluid">
             <div className="row">
                 <div className="col-4 offset-md-2 bg-gray py-5 pe-5">
                     <h4 className="text-white text-shadow">{title}</h4>
                     <h3 className="text-blue ">{subtitle}{` `}
                     <span className="text-white ">{paragraph}</span></h3>
-                    <p className="text-white">{description}</p>
+                    <p className="text-white description-text">{description}</p>
                 </div>
                  <div className="col-6 p-0">
                     <div className="tech-slider ">

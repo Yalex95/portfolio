@@ -1,8 +1,8 @@
-import React, {useState} from 'react'
+import React, {useState, useRef} from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { generateUniqueId } from '../utils/utils'; // Path to your utils file
 
-const projects = ({projects}) => {
+const projects = ({sectionRefs, projects}) => {
   const [selectedCategory, setSelectedCategory] = useState('all');
   const handleCategoy = (selectedCategory) =>{
     setSelectedCategory(selectedCategory);
@@ -10,9 +10,12 @@ const projects = ({projects}) => {
   const uniqueCats = [...new Set(projects.map(obj => obj.category))];
   const filteredItems = selectedCategory === 'all'
   ? projects : projects.filter(item => item.category === selectedCategory);
+  
+  const projectsRef = useRef(null);
+  sectionRefs.current['projects'] = projectsRef;
   return (
     
-    <section id="projects" >
+    <section id="projects" ref={projectsRef}>
         <div className="container">
             <div className="row pb-4">
                  <h2 className="text-gray">projects</h2>

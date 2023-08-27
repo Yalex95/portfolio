@@ -1,5 +1,6 @@
 import Header from "./components/Header"
 import FooterPortfolio from "./components/FooterPortfolio";
+import React, { useRef } from 'react';
 import Hero from "./components/Hero";
 import Tech from "./components/Tech";
 import Projects from "./components/Projects";
@@ -11,17 +12,16 @@ import data from './json/portfolioData.json'
 
 function App() {
 const {banner, social, tech,projects,contact, footer} = data
+
+
+const sectionRefs = useRef({});
   return (
     <>
-    <Header/>
-    {/* fix scroll spy */}
-    <div data-bs-spy="scroll" data-bs-target="#nav" data-bs-offset="0" tabindex="0">
-    <Hero banner = {banner} social={social}/>
-    <Tech tech = {tech} />
-    <Projects projects = {projects} />
-    <Contact contact ={contact} />
-
-    </div>
+    <Header sectionRefs={sectionRefs}/>
+    <Hero sectionRefs={sectionRefs} banner = {banner} social={social}/>
+    <Tech sectionRefs={sectionRefs} tech = {tech} />
+    <Projects sectionRefs={sectionRefs}  projects = {projects} />
+    <Contact sectionRefs={sectionRefs}  contact ={contact} />
 
     <FooterPortfolio footer = {footer} />
     
