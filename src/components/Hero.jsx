@@ -1,7 +1,8 @@
 import React, {useRef } from 'react'
 import { DownloadPDF } from './DownloadPDF'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import PropTypes from 'prop-types'
+import { generateUniqueId } from '../utils/utils'; 
+
 
 const Hero = ({sectionRefs,banner,social}) => {
     const {title, subtitle, description} = banner
@@ -23,8 +24,8 @@ const Hero = ({sectionRefs,banner,social}) => {
                         
                             <a href="#contact-me" className=" btn contact-btn mb-4">Contact me</a>
                         <div className="social-links mb-3">
-                            {social.map(({id,data,icon})=>(
-                                <a key={id} href={data} className="text-gray me-3 text-decoration-none"><FontAwesomeIcon icon={icon} /> </a>
+                            {social.map(({data,icon})=>(
+                                <a key={generateUniqueId()} href={data} className="text-gray me-3 text-decoration-none"><FontAwesomeIcon icon={icon} /> </a>
                                 
                             ))}
                         </div>

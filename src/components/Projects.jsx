@@ -1,6 +1,6 @@
 import React, {useState, useRef} from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { generateUniqueId } from '../utils/utils'; // Path to your utils file
+import { generateUniqueId } from '../utils/utils'; 
 
 const projects = ({sectionRefs, projects}) => {
   const [selectedCategory, setSelectedCategory] = useState('all');
@@ -32,8 +32,8 @@ const projects = ({sectionRefs, projects}) => {
             </div>
             <div className="box">
                 {/* create random id */}
-                {filteredItems.map(({id,name,icon,description, category, link}) =>(
-                    <div key={id} className="project-item">
+                {filteredItems.map(({name,icon,description, category, link}) =>(
+                    <div key={generateUniqueId()} className="project-item">
                         <div className="project-img">
                         <FontAwesomeIcon icon={icon} />
                         </div>

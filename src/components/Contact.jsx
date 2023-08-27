@@ -1,6 +1,7 @@
 import React, {useRef} from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { ContactUs } from './ContactForm';
+import { generateUniqueId } from '../utils/utils'; 
 
 const Contact = ({sectionRefs,contact}) => {
     const {title, text, links} = contact
@@ -16,8 +17,8 @@ const Contact = ({sectionRefs,contact}) => {
                 <p className='text-white fs-5'>{text}</p>
                     <ul className="d-flex justify-content-center fs-4 text-gray">
                         {/* create random id */}
-                        {links.map(({id,href,data,icon})=>(
-                            <li key={id} className="me-3"><a href={href} className="text-decoration-none text-gray"><FontAwesomeIcon icon={icon} className='me-3'/>{data}</a></li>
+                        {links.map(({href,data,icon})=>(
+                            <li key={generateUniqueId()} className="me-3"><a href={href} className="text-decoration-none text-gray"><FontAwesomeIcon icon={icon} className='me-3'/>{data}</a></li>
                         ))}
                 
                     </ul>
