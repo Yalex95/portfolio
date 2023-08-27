@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { generateUniqueId } from '../utils/utils'; // Path to your utils file
+import { generateUniqueId } from '../utils/utils';
 
 import Slider from 'react-slick';
 

@@ -7,17 +7,12 @@
     ,
     "social": [
         {    
-            "id":13,
             "data":"https://github.com/Yalex95",
             "icon": "fa-brands fa-github"
         },{
-            
-            "id":14,
             "data": "https://stackoverflow.com/users/15331013/yeris-aguilar",
             "icon": "fa-brands fa-stack-overflow"
         },{
-            
-            "id":15,
             "data":"https://www.linkedin.com/in/yeris-alejandra-aguilar-gordillo-a07aa9191/",
             "icon": "fa-brands fa-linkedin"
         }
@@ -44,38 +39,34 @@
     },
     "projects":[
         
-        {
-            "id":1, 
+        { 
             "name": "Franchoice",
             "icon": "fa-brands fa-wordpress", 
-            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium maiores harum aliquam modi! Nulla quam soluta doloribus quas quasi corrupti corporis perspiciatis, sed laudantium amet rem, possimus quisquam. Aspernatur, eius.", 
+            "description": "is a project I contributed to, playing a pivotal role in its creation. This project was built using a combination of technologies and tools, including ACF (Advanced Custom Fields) for flexible content management, the WP API (WordPress API) for data retrieval and manipulation, WordPress as the core platform, PHP as the server-side scripting language, JavaScript for dynamic interactions, and the Bootstrap framework along with Bootscore WP Starter for responsive design and a solid foundation. The collaboration resulted in a dynamic and user-friendly web solution that showcases the power of synergy between different technologies.", 
             "category": "wordpress",
             "link":"https://www.franchoice.com/"
             
         },
         {   
-            "id":2, 
             "name": "Groovy Hues",
             "icon": "fa-brands fa-wordpress", 
-            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium maiores harum aliquam modi! Nulla quam soluta doloribus quas quasi corrupti corporis perspiciatis, sed laudantium amet rem, possimus quisquam. Aspernatur, eius.", 
+            "description": "is a project I contributed to, playing a pivotal role in its creation. This project was built using a combination of technologies and tools, including ACF (Advanced Custom Fields) for flexible content management, the WP API (WordPress API) for data retrieval and manipulation, WordPress as the core platform, PHP as the server-side scripting language, JavaScript for dynamic interactions, and the Bootstrap framework along with Bootscore WP Starter for responsive design and a solid foundation. The collaboration resulted in a dynamic and user-friendly web solution that showcases the power of synergy between different technologies.", 
             "category": "wordpress",
             "link":"https://groovyhues.com/"
             },
         {   
-            "id":3, 
             "name": "Bumble Blinds",
             "icon": "fa-brands fa-wordpress", 
-            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium maiores harum aliquam modi! Nulla quam soluta doloribus quas quasi corrupti corporis perspiciatis, sed laudantium amet rem, possimus quisquam. Aspernatur, eius.", 
+            "description": "is a project I contributed to, playing a pivotal role in its creation. This project was built using a combination of technologies and tools, including ACF (Advanced Custom Fields) for flexible content management, the WP API (WordPress API) for data retrieval and manipulation, WordPress as the core platform, PHP as the server-side scripting language, JavaScript for dynamic interactions, and the Bootstrap framework along with Bootscore WP Starter for responsive design and a solid foundation. The collaboration resulted in a dynamic and user-friendly web solution that showcases the power of synergy between different technologies.", 
             "category": "wordpress",
             "link":"https://bumblebeeblinds.com/"
             },
         {   
-            "id":4, 
-            "name": "Item 1",
+            "name": "TO-DO List",
             "icon": "fa-solid fa-code", 
-            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium maiores harum aliquam modi! Nulla quam soluta doloribus quas quasi corrupti corporis perspiciatis, sed laudantium amet rem, possimus quisquam. Aspernatur, eius.", 
+            "description": "This project was made with Firebase real time data base and React js framework. *Adds TODO items to database *Delete TODO items to database *updates completed items", 
             "category": "react",
-            "link":""
+            "link":"https://yalex95.github.io/TodoListCrud/"
             }
         ],
     "contact": {
@@ -83,19 +74,14 @@
             "text": "If you're looking for a front-end web developer who is equally comfortable with JavaScript wizardry, HTML artistry, CSS elegance, PHP magic, WordPress wizardry, and REST API mastery, then look no further. I'm excited to bring my passion, skills, and creativity to the table, creating experiences that resonate and leave a lasting impact. Feel free to reach out, and let's collaborate to turn your digital dreams into reality. Together, we can sculpt a digital world that's as functional as it is beautiful.",
             "links": [
                 {
-                    "id":1,
                     "href": "tel:9632337458",
                     "data": "963 233 74 58",
                     "icon": "fa-solid fa-phone"
                 },{
-                    
-                    "id":12,
                     "href": "mailto:yerisaguilar@gmail.com",
                     "data": "yerisaguilar@gmail.com",
                     "icon": "fa-solid fa-envelope"
                 },{
-                    
-                    "id":13,
                     "href": "mailto:yerisaguilar@gmail.com",
                     "data": "yerisaguilar95@gmail.com",
                     "icon": "fa-solid fa-envelope"
@@ -104,19 +90,8 @@
         },
     "footer": [
         {    
-            "id":13,
             "data":"https://github.com/Yalex95",
             "icon": "fa-brands fa-github"
-        },{
-            
-            "id":14,
-            "data": "https://stackoverflow.com/users/15331013/yeris-aguilar",
-            "icon": "fa-brands fa-stack-overflow"
-        },{
-            
-            "id":15,
-            "data":"https://www.linkedin.com/in/yeris-alejandra-aguilar-gordillo-a07aa9191/",
-            "icon": "fa-brands fa-linkedin"
         }
     ]
     

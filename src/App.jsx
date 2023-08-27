@@ -11,7 +11,7 @@ import data from './json/portfolioData.json'
 
 
 function App() {
-const {banner, social, tech,projects,contact, footer} = data
+const {banner, social, tech, projects, contact, footer} = data
 
 
 const sectionRefs = useRef({});
@@ -23,7 +23,7 @@ const sectionRefs = useRef({});
     <Projects sectionRefs={sectionRefs}  projects = {projects} />
     <Contact sectionRefs={sectionRefs}  contact ={contact} />
 
-    <FooterPortfolio footer = {footer} />
+    <FooterPortfolio footer = {footer} social={social} contact={contact} />
     
     </>
   )
