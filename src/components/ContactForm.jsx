@@ -54,7 +54,7 @@ export const ContactUs = () => {
   return (
     
     <>
-    {!showMessage &&
+    {(!showError && !showMessage)?
     <form id="contact" className=' row g-3'ref={form} onSubmit={sendEmail}>
       {message && <span className='error'>{message}</span>}
       <div className='col-md-6'>
@@ -71,10 +71,11 @@ export const ContactUs = () => {
         <input className="w-25 btn rounded btn-light text-uppercase w-25 m-auto"type="submit" value="Send" />
       </div>
     </form>
+    : ''
     }
     {showMessage && <ConfirmationMessage message={message}/>}
     
-    {showError && <ErrorMessage message={message}/>}
+    {(showError && !showMessage)? <ErrorMessage message={message}/> : ''}
     </>
   );
 };
