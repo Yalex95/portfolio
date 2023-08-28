@@ -6,13 +6,23 @@
         }
     }
 }
+
+.error{
+    color: red;
+    padding: 5px 10px;
+    margin: 0 8px;
+    border-left: 3px solid red;
+    width: 50%;
+    border-radius: 0 20px 20px 0;
+    background-color: #fff;
+}
+.fill{
+    filter: invert(100%);
+}
 .text-shadow{
     text-shadow: 3px 1px #558abb;
 }
 .contact-form{
     padding: 100px 0;
     background-color: #00A8CD;
-}
-#contact ul li::marker{
-    content: '';
 }
