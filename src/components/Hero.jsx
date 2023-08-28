@@ -9,6 +9,10 @@ const Hero = ({sectionRefs,banner,social}) => {
 
     const heroRef = useRef(null);
     sectionRefs.current['hero'] = heroRef;
+    /**
+   * TODO:
+   * - fix contact me btn hover effect
+   */
   return (
     
     <section id="hero"  ref={heroRef}>

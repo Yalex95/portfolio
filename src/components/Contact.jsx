@@ -7,6 +7,10 @@ const Contact = ({sectionRefs,contact}) => {
 
     const contactRef = useRef(null);
     sectionRefs.current['contact-me'] = contactRef;
+    /**
+   * TODO:
+   * - remove contact me text and parragraph when the form is submited
+   */
   return (
     <section id="contact-me"  ref={contactRef}>
         <div className="container-fluid contact-form">
