@@ -15,7 +15,7 @@ const Hero = ({sectionRefs,banner,social}) => {
     <section id="hero"  ref={heroRef}>
         <div className="container">
             <div className="row hero-row">
-                <div className="col-6 z2">
+                <div className="col-12 col-md-8 col-lg-6 z2">
                     <div>
                         <h3 className='mb-0'>{title}</h3> 
                         <h1>{subtitle}</h1>
@@ -33,7 +33,7 @@ const Hero = ({sectionRefs,banner,social}) => {
                         <DownloadPDF/>
                     </div>
                 </div>
-                <div className="col-6">
+                <div className="col-12 col-md-8 col-lg-6">
                 </div>
             </div>
         </div>

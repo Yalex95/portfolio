@@ -22,7 +22,7 @@ const Header = ({sectionRefs}) => {
     }
 
     for (const [section, ref] of Object.entries(sectionRefs.current)) {
-      if (ref.current && ref.current.getBoundingClientRect().top <= 50) {
+      if (ref.current && ref.current.getBoundingClientRect().top <= 70) {
         setActiveSection(section);
       }
     }

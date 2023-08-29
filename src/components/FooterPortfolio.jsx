@@ -11,7 +11,7 @@ const FooterPortfolio = ({footer, social, contact}) => {
         <div className="container">
             <div className="row">
                 
-                <div className="col-4">
+                <div className="col-12 col-md-4">
                   <h6 className='text-white'> Feel free to reach out!</h6>
                 {links.map(({href, data, icon})=>(
                     <a key={generateUniqueId()} href={href} className="d-block text-white me-3 text-decoration-none mb-2"><FontAwesomeIcon icon={icon} className='me-2'/> {data}</a>
@@ -19,9 +19,9 @@ const FooterPortfolio = ({footer, social, contact}) => {
                   ))}
 
                 </div>
-                <div className="col-4 d-flex justify-content-start fs-2">
+                <div className="col-12 col-md-4 d-flex justify-content-start fs-2">
                 </div>
-                <div className="col-4 d-flex justify-content-end fs-2">
+                <div className="col-12 col-md-4 d-flex justify-content-start justify-content-md-end fs-2">
                   {social.map(({data,icon})=>(
                     <a key={generateUniqueId()} href={data} className="text-white me-3 text-decoration-none"><FontAwesomeIcon icon={icon} /> </a>
                     

@@ -37,3 +37,16 @@ height: 100%;
     font-size: 70px;
     margin-bottom: 2rem;
 }
+
+
+@media only screen and (max-width: 992px) {
+  #tech{
+    .svg-inline--fa{
+      margin-bottom: 0;
+      height: 40px;
+    }
+    .item{
+      padding: 20px !important;
+    }
+  }
+}

@@ -78,3 +78,9 @@ p{
     scroll-margin-top: 5em;
 
 }
+
+@media only screen and (max-width: 992px) {
+    p{
+        line-height: 20px;
+    }
+}

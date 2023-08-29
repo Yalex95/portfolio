@@ -21,7 +21,7 @@ const projects = ({sectionRefs, projects}) => {
                  <h2 className="text-gray">projects</h2>
             </div>
             <div className="category row justify-content-center pb-4">
-                <div id="categories" className="btn-group col-4" role="group" aria-label="Basic example">
+                <div id="categories" className="btn-group col-12 col-md-4" role="group" aria-label="Basic example">
                     <button onClick={()=>handleCategoy('all')} type="button" className={`btn btn-secondary ${selectedCategory === 'all'? 'active' : ''}`} >All</button>
                     {uniqueCats.map(item =>(
                         <button key={generateUniqueId()} onClick={()=>handleCategoy(item)} type="button" className={`btn btn-secondary text-capitalize ${selectedCategory === item? 'active' : ''}`} >{item}</button>

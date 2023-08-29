@@ -68,3 +68,14 @@
     text-decoration: none;
     color: #33B9D4;
 }
+
+@media only screen and (max-width: 992px) {
+    .project-item{
+        width: calc(50% - 10px);
+    }
+}
+@media only screen and (max-width: 762px) {
+    .project-item{
+        width: calc(100% - 10px);
+    }
+}

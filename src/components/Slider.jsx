@@ -26,7 +26,7 @@ class Sliders extends Component{
                     <div className={`d-flex align-items-center text-center ${'bg-'+index} text-white item py-5`}>
                         <div className="m-auto">
                              <FontAwesomeIcon icon={technologies.icon} />
-                            <h6>{technologies.tech}</h6>
+                            <h6 className='d-none d-md-block'>{technologies.tech}</h6>
                         </div>
                     </div>
                 </div>
