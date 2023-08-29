@@ -5,8 +5,7 @@
   "homepage": "https://yalex95.github.io/portfolio/",
   "type": "module",
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages –d build",
+    "deploy": "vite build && gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
