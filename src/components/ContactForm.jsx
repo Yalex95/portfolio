@@ -10,7 +10,7 @@ export const ContactUs = () => {
   const [showError, setShowError] = useState(false);
   const [message, setMessage] = useState('');
 
-  // form validation
+  // TODO: when building the site cehck the path for the assets, and add read me on mobile devices 
 
 
   const sendEmail = (e) => {
