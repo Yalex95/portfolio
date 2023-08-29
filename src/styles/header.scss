@@ -16,5 +16,8 @@ nav{
         color: #3E4E5D !important;
         font-weight: 900;
     }
+    .navbar-toggler:focus{
+        box-shadow: unset !important;
+    }
 }
 

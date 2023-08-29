@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 const Header = ({sectionRefs}) => {
   const [activeSection, setActiveSection] = useState('hero');
   const [scrolled, setScrolled] = useState(false);
+  const [collapsed, setCollapsed] = useState(false);
 
   const handleNavigationClick = (sectionId) => {
     const ref = sectionRefs.current[sectionId];
@@ -15,6 +16,10 @@ const Header = ({sectionRefs}) => {
     }
   };
   const handleScroll = () => {
+    
+    setTimeout(() => {
+      setCollapsed(false)
+    }, 500);
     if (window.scrollY > 50) { // Adjust the scroll threshold as needed
       setScrolled(true);
     } else {
@@ -26,6 +31,7 @@ const Header = ({sectionRefs}) => {
         setActiveSection(section);
       }
     }
+    
   };
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
@@ -34,15 +40,19 @@ const Header = ({sectionRefs}) => {
     };
   }, []);
 
+  const handleCollapse = ()=>{
+    setCollapsed(!collapsed)
+  }
+
   return (
     <>
    <nav id="nav" className={`navbar text-white navbar-expand-lg navbar-light bg-white fixed-top ${scrolled ? 'scrolled' : ''}`}>
         <div className="container-fluid">
           <a className="navbar-brand" href="#"></a>
-          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <button onClick={() => handleCollapse()} className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
-          <div className="collapse navbar-collapse" id="navbarNav">
+          <div className={`${collapsed && 'show'} collapse navbar-collapse`} id="navbarNav">
             <ul className="navbar-nav">
               <li className="nav-item">
                 <a onClick={() => handleNavigationClick('hero')}  className={`nav-link ${activeSection === 'hero' ? 'active' : ''}`} >Home</a>
