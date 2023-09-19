@@ -25,7 +25,7 @@
         "technologies": [
             {
                 "icon": "fa-brands fa-wordpress",
-                "tech":"Wordpress theme development"
+                "tech":"WP Theme Dev"
             },
             {
                 "icon": "fa-brands fa-php",
@@ -33,7 +33,39 @@
             },
             {
                 "icon": "fa-brands fa-react",
-                "tech":"React JS development"
+                "tech":"React JS"
+            },
+            {
+                "icon": "fa-brands fa-sass",
+                "tech":"Sass"
+            },
+            {
+                "icon": "fa-brands fa-js",
+                "tech":"JavaScript"
+            },
+            {
+                "icon": "fa-brands fa-html5",
+                "tech":"HTML 5"
+            },
+            {
+                "icon": "fa-brands fa-css3-alt",
+                "tech":"css"
+            },
+            {
+                "icon": "fa-brands fa-bootstrap",
+                "tech":"bootstrap"
+            },
+            {
+                "icon": "fa-brands fa-github",
+                "tech":"Github"
+            },
+            {
+                "icon": "fa-brands fa-git",
+                "tech":"Git"
+            },
+            {
+                "icon": "fa-brands fa-bitbucket",
+                "tech":"Bitbucket"
             }
         ]
     },

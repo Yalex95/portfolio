@@ -14,22 +14,29 @@ const Tech = ({sectionRefs, tech}) => {
     }
     return (
     
-    <section id="tech" className="bg-gray" ref={techRef}>
-        <div className="container-fluid">
-            <div className="row">
-                <div className="col-md-12 col-lg-4 offset-md-0 offset-lg-2 bg-gray py-5 pe-5">
-                    <h4 className="text-white text-shadow">{title}</h4>
+    <section id="tech" className="" ref={techRef}>
+        <div className="container">
+            <div className="row justify-content-center py-5">
+                <div className="col-4">
+                    <div className='p-relative image-container'></div>
+                    {/* <img src="" alt="" /> */}
+                </div>
+                <div className="col-6">
+                    <h4 className="text-gray">{title}</h4>
                     <h3 className="text-blue ">{subtitle}{` `}
-                    <span className="text-white ">{paragraph}</span></h3>
-                    <p className={`text-white description-text ${readMore? '':'elipsis'} `}>{description}</p>
+                    <span className="">{paragraph}</span></h3>
+                    <p className={`description-text ${readMore? '':'elipsis'} `}>{description}</p>
                     <button className="btn btn-outline-info btn-sm" onClick={handleOnClick}>{`${readMore? 'Read Less':'Read More'}`}</button>
                 </div>
-                 <div className="col-md-12 col-lg-6 p-0">
-                    <div className="tech-slider ">
-                        <Sliders technologies = {technologies}/>
-                    </div>
+            </div>
+            <div className="row justify-content-center py-5">
+                    
+                <h3 className=" text-gray">Tech Stack</h3>
+                <div className="tech-slider ">
+                    <Sliders technologies = {technologies}/>
                 </div>
             </div>
+                
         </div>
     </section>
   )

@@ -1,21 +1,18 @@
-.bg-0 {
-  background-color: #00A8CD;
-}
-.bg-1 {
-  background-color: #1BB1D4;
-}
-.bg-2 {
-  background-color: #33B9D4;
-}
-.bg-3{
-  background-color: #40c6e1;
-}
+
 #tech{
-  .description-text{
+  .image-container{
+    position: relative;
+    &::before{
+      content: '';
+      position: absolute;
+      height: 40px;
+      width: 40px;
+      background-color: #1BB1D4;
+    }
   }
     .svg-inline--fa{
         height: 80px;
-        margin-bottom: 1rem;
+        margin-bottom: 0.5rem;
     }
 }
 .elipsis{
@@ -26,10 +23,9 @@
   white-space: pre-wrap;
 }
 .tech-slider{
-    height: 100%;
-    .slick-slider,.slider-item , .slick-slide > div{
-        height: 100%;
-    }
+  .slider-item{
+    color:#6c757d;
+  }
 }
 .tech-slider .slick-list, .tech-slider .slick-track{
 height: 100%;
