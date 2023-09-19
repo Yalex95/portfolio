@@ -18,9 +18,9 @@ const projects = ({sectionRefs, projects}) => {
     <section id="projects" ref={projectsRef}>
         <div className="container">
             <div className="row pb-4">
-                 <h2 className="text-gray">projects</h2>
+                 <h2 className="text-gray">Works showcase </h2>
             </div>
-            <div className="category row justify-content-center pb-4">
+            <div className="category row justify-content-center pb-5">
                 <div id="categories" className="btn-group col-12 col-md-4" role="group" aria-label="Basic example">
                     <button onClick={()=>handleCategoy('all')} type="button" className={`btn btn-secondary ${selectedCategory === 'all'? 'active' : ''}`} >All</button>
                     {uniqueCats.map(item =>(
@@ -32,14 +32,26 @@ const projects = ({sectionRefs, projects}) => {
             </div>
             <div className="box">
                 {/* create random id */}
-                {filteredItems.map(({name,icon,description, category, link}) =>(
+                {filteredItems.map(({name,icon,description, category, link,github_link}) =>(
                     <div key={generateUniqueId()} className="project-item">
+                        <div className="overlay"></div>
+                        
                         <div className="project-img">
                         <FontAwesomeIcon icon={icon} />
                         </div>
                         <div className="text-container">
-                            <a href={link} className="project-name">{name}</a>
+                            <p className="project-name">{name}</p>
+                        </div>
+                        <div className="desc">
                             <p>{description}</p>
+                            <div className="flex justify-content-start d-flex">
+                                <a href={link} className='btn btn-primary btn-sm me-3'>Link</a>
+                                {
+                                (github_link != '' && github_link) ? 
+                                <a href={github_link} className='btn btn-outline-info btn-sm repo-btn'><FontAwesomeIcon icon="fa-brands fa-github" className='me-2' />Repository</a>
+                                : ''}
+                            </div>
+
                         </div>
                     </div>
                 ))}

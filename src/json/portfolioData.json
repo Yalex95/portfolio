@@ -44,7 +44,8 @@
             "icon": "fa-brands fa-wordpress", 
             "description": "is a project I contributed to, playing a pivotal role in its creation. This project was built using a combination of technologies and tools, including ACF (Advanced Custom Fields) for flexible content management, the WP API (WordPress API) for data retrieval and manipulation, WordPress as the core platform, PHP as the server-side scripting language, JavaScript for dynamic interactions, and the Bootstrap framework along with Bootscore WP Starter for responsive design and a solid foundation. The collaboration resulted in a dynamic and user-friendly web solution that showcases the power of synergy between different technologies.", 
             "category": "wordpress",
-            "link":"https://www.franchoice.com/"
+            "link":"https://www.franchoice.com/",
+            "github_link":""
             
         },
         {   
@@ -52,28 +53,48 @@
             "icon": "fa-brands fa-wordpress", 
             "description": "is a project I contributed to, playing a pivotal role in its creation. This project was built using a combination of technologies and tools, including ACF (Advanced Custom Fields) for flexible content management, the WP API (WordPress API) for data retrieval and manipulation, WordPress as the core platform, PHP as the server-side scripting language, JavaScript for dynamic interactions, and the Bootstrap framework along with Bootscore WP Starter for responsive design and a solid foundation. The collaboration resulted in a dynamic and user-friendly web solution that showcases the power of synergy between different technologies.", 
             "category": "wordpress",
-            "link":"https://groovyhues.com/"
+            "link":"https://groovyhues.com/",
+            "github_link":""
             },
         {   
             "name": "Bumble Blinds",
             "icon": "fa-brands fa-wordpress", 
             "description": "is a project I contributed to, playing a pivotal role in its creation. This project was built using a combination of technologies and tools, including ACF (Advanced Custom Fields) for flexible content management, the WP API (WordPress API) for data retrieval and manipulation, WordPress as the core platform, PHP as the server-side scripting language, JavaScript for dynamic interactions, and the Bootstrap framework along with Bootscore WP Starter for responsive design and a solid foundation. The collaboration resulted in a dynamic and user-friendly web solution that showcases the power of synergy between different technologies.", 
             "category": "wordpress",
-            "link":"https://bumblebeeblinds.com/"
+            "link":"https://bumblebeeblinds.com/",
+            "github_link":""
             },
         {   
             "name": "TO-DO List",
             "icon": "fa-brands fa-react", 
             "description": "This project was made with Firebase real time data base and React js framework. *Adds TODO items to database *Delete TODO items to database *updates completed items", 
             "category": "react",
-            "link":"https://yalex95.github.io/TodoListCrud/"
+            "link":"https://yalex95.github.io/TodoListCrud/",
+            "github_link":""
             },
             {   
-                "name": "Carpinteria Aguilar",
+                "name": "Portfolio",
                 "icon": "fa-brands fa-react", 
-                "description": "This project was made with Firebase real time data base and React js framework.", 
+                "description": "This project was made with React js framework.", 
                 "category": "react",
-                "link":"https://yalex95.github.io/CarpinteriaAguilar/"
+                "link":"https://yalex95.github.io/portfolio/",
+                "github_link":"https://github.com/Yalex95/portfolio"
+            },
+            {   
+                "name": "Budget Controller",
+                "icon": "fa-brands fa-react", 
+                "description": "This project was made with React js framework.", 
+                "category": "react",
+                "link":"https://yalex95.github.io/budget/",
+                "github_link":"https://github.com/Yalex95/budget"
+            },
+            {   
+                "name": "Anime Rest API",
+                "icon": "fa-brands fa-react", 
+                "description": "This project was made with React js framework.", 
+                "category": "react",
+                "link":"https://yalex95.github.io/web-app/",
+                "github_link":"https://github.com/Yalex95/web-app"
                 }
         ],
     "contact": {

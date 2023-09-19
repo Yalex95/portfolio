@@ -33,7 +33,9 @@ const Hero = ({sectionRefs,banner,social}) => {
                         <DownloadPDF/>
                     </div>
                 </div>
-                <div className="col-12 col-md-8 col-lg-6">
+                <div className="col-12 col-md-8 col-lg-6 align-items-center">
+                <div className="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="light" data-type="VERTICAL" data-vanity="yeris-alejandra-aguilar-gordillo-a07aa9191" data-version="v1"><a className="badge-base__link LI-simple-link" href="https://mx.linkedin.com/in/yeris-alejandra-aguilar-gordillo-a07aa9191/en?trk=profile-badge"></a></div>
+              
                 </div>
             </div>
         </div>
