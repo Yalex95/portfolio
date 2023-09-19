@@ -1,24 +1,26 @@
-/* width */
+
+/*//width 
 ::-webkit-scrollbar {
     width: 5px;
   }
   
-  /* Track */
+  //Track
   ::-webkit-scrollbar-track {
     background: #f1f1f1; 
     border-radius: 10px;
   }
    
-  /* Handle */
+  // Handle 
   ::-webkit-scrollbar-thumb {
     background: #00A8CD; 
     border-radius: 10px;
   }
   
-  /* Handle on hover */
+  // Handle on hover 
   ::-webkit-scrollbar-thumb:hover {
     background: #555; 
-  }
+  }*/
+
 #projects{
     padding: 100px 0;
     .btn.btn-secondary{
@@ -59,13 +61,7 @@
     }
 }
 .project-item:hover{
-
     box-shadow: 0px 1px 13px #00A8CD;
-    // .project-name{
-    //     z-index: 1;
-    //     position: relative;
-    // }
-    
 }
 
 .project-item:hover .desc {
@@ -94,6 +90,14 @@
         padding: 0 1.5rem 1rem;
         transform: translate(0, 100%);
         transition: 0.5s ease;
+        background-color: #fff;
+        p{
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 3; 
+            white-space: pre-wrap;
+        }
         
     }
     
@@ -105,7 +109,7 @@
         left: 0;
         transform: translate(0, -100%);
         transition: 0.1s ease-in-out;
-        // background-color: transparent;
+        // background-color: #fff
     }
 }
 .text-container{
