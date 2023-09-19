@@ -12,13 +12,18 @@
 }
 #tech{
   .description-text{
-    max-height: 100px;
-    overflow-y: auto;
   }
     .svg-inline--fa{
         height: 80px;
         margin-bottom: 1rem;
     }
+}
+.elipsis{
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3; 
+  white-space: pre-wrap;
 }
 .tech-slider{
     height: 100%;

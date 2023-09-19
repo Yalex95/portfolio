@@ -1,26 +1,4 @@
 
-/*//width 
-::-webkit-scrollbar {
-    width: 5px;
-  }
-  
-  //Track
-  ::-webkit-scrollbar-track {
-    background: #f1f1f1; 
-    border-radius: 10px;
-  }
-   
-  // Handle 
-  ::-webkit-scrollbar-thumb {
-    background: #00A8CD; 
-    border-radius: 10px;
-  }
-  
-  // Handle on hover 
-  ::-webkit-scrollbar-thumb:hover {
-    background: #555; 
-  }*/
-
 #projects{
     padding: 100px 0;
     .btn.btn-secondary{
@@ -43,7 +21,7 @@
     
 }
 
-.project-item:hover .overlay,
+// .project-item:hover .overlay,
 .project-item:hover .desc {
     
      transform: unset;
@@ -53,15 +31,21 @@
   -moz-transform: translate3d(0, 0, 0);
 }
 .project-item:hover .project-img{
-    visibility: hidden;
+    // visibility: hidden;
     height: 0;
     padding-bottom: 0;
     .svg-inline--fa{
         height: 0;
+        clip-path: polygon(0 0, 100% 0%, 100% 0, 0 0);
     }
 }
 .project-item:hover{
     box-shadow: 0px 1px 13px #00A8CD;
+    .project-name{
+        z-index: 1;
+        position: relative;
+    }
+        
 }
 
 .project-item:hover .desc {
@@ -89,8 +73,8 @@
         font-size: 16px;
         padding: 0 1.5rem 1rem;
         transform: translate(0, 100%);
-        transition: 0.5s ease;
-        background-color: #fff;
+        transition: 0.3s ease;
+        // background-color: #fff;
         p{
             overflow: hidden;
             display: -webkit-box;
@@ -100,42 +84,27 @@
         }
         
     }
-    
-    .overlay{
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        top: 0;
-        left: 0;
-        transform: translate(0, -100%);
-        transition: 0.1s ease-in-out;
-        // background-color: #fff
-    }
 }
 .text-container{
     padding: 15px 20px ;
 }
-.project-name{
-    text-align: center;
-    margin-bottom: 0;
-}
-.project-item .text-container p:not(p.project-name){
-    // height: 80px;
-    // overflow: auto;
-    // display: none;
-}
 .project-img{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: block;
+    text-align: center;
     padding: 15px;
     color: #00A8CD;
+    .svg-inline--fa{
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+    transition: 0.3s ease;
+    }
 }
 .project-img i{
     font-size: 100px;
     color: #fff;
 }
 .project-name{
+    text-align: center;
+    margin-bottom: 0;
     font-size: 18px;
     font-weight: 700;
     text-decoration: none;
