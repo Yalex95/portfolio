@@ -1,13 +1,27 @@
-
+#tech-stack{
+  padding: 100px 0 0;
+}
 #tech{
+  padding: 100px 0 0;
   .image-container{
     position: relative;
-    &::before{
+    .image-profile{
+      border-radius: 50%;
+    }
+    &::before,&::after{
       content: '';
       position: absolute;
       height: 40px;
       width: 40px;
       background-color: #1BB1D4;
+    }
+    &::before{
+      top: 0;
+      left: 0;
+    }
+    &::after{
+      bottom: 0;
+      right: 0;
     }
   }
     .svg-inline--fa{

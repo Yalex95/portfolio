@@ -46,7 +46,7 @@ const Header = ({sectionRefs}) => {
 
   return (
     <>
-   <nav id="nav" className={`navbar text-white navbar-expand-lg navbar-light bg-white fixed-top ${scrolled ? 'scrolled' : ''}`}>
+   <nav id="nav" className={`navbar text-white navbar-expand-lg navbar-light  fixed-top ${scrolled ? 'scrolled' : ''}`}>
         <div className="container-fluid">
           <a className="navbar-brand" href="#"></a>
           <button onClick={() => handleCollapse()} className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">

@@ -29,6 +29,15 @@ const FooterPortfolio = ({footer, social, contact}) => {
                 </div>
             </div>
         </div>
+        <div className='row footer-bottom py-3 mt-3'>
+          <div className="col-4 text-center text-white">
+                    <div><FontAwesomeIcon icon="fa-solid fa-map-pin" /> Tijuana, BC, Mexico</div>
+          </div>
+          <div className="col-4 text-center">
+            <p className='text-white m-0'>v1.0</p>
+          </div>
+          <div className="col-4"></div>
+        </div>
     </footer>
   )
 }

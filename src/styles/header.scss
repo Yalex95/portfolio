@@ -1,5 +1,6 @@
 nav.scrolled{
-    box-shadow: -1px 6px 15px rgb(95 95 95 / 14%);
+    // box-shadow: -1px 6px 15px rgb(95 95 95 / 14%);
+    background-color: #18263D;
 }
 nav{
     padding: 1.5rem 0 !important ;
@@ -7,14 +8,12 @@ nav{
         font-size: 18px !important;
         color: #fff !important;
         padding: 0 1rem !important;
-        color: #00A8CD !important;
         
     }
     li a.active,a:hover{
         // background-color: #3E4E5D;
         // border-radius: 15px;
-        color: #3E4E5D !important;
-        font-weight: 900;
+        color: #00A8CD !important;
     }
     .navbar-toggler:focus{
         box-shadow: unset !important;
