@@ -1,8 +1,15 @@
+import About from "~/components/about";
+import Contact from "~/components/contact";
+import Hero from "~/components/hero";
+import Projects from "~/components/projects";
 
 export default function Index() {
   return (
-    <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.8" }}>
-      <h1>Welcome to Remixes</h1>
-    </div>
+    <main>
+      <Hero/>
+      <About/>
+      <Projects/>
+      <Contact/>
+    </main>
   );
 }
