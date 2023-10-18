@@ -1,0 +1,37 @@
+@font-face {
+  font-family: "Inter";
+  src: url(~/fonts/Inter-Regular.ttf);
+}
+:root {
+  --primary: #011b32;
+  --secondary: #A15AFF;
+  --principal-font: 'Inter', sans-serif;
+  --secondary-font: 'Sansation', sans-serif;
+}
+p {
+  color: var(--primary);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}
+.inter-bold {
+  color: var(--primary);
+  font-family: var(--principal-font);
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px; /* 112.5% */
+  text-transform: uppercase;
+}
+.sensation-bold{
+    color: var(--secondary);
+    text-align: center;
+    font-family: var(--secondary-font);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
