@@ -2,12 +2,16 @@
   font-family: "Inter";
   src: url(~/fonts/Inter-Regular.ttf);
 }
+@font-face {
+  font-family: "Sansation";
+  src: url(~/fonts/Sansation_Bold.ttf);
+}
 :root {
   --primary: #011b32;
   --secondary: #a15aff;
   --white: #fff;
-  --principal-font: "Inter", sans-serif;
-  --secondary-font: "Sansation", sans-serif;
+  --principal-font: "Inter";
+  --secondary-font: "Sansation";
 }
 *,
 *:before,
@@ -22,8 +26,8 @@ body {
 html {
   box-sizing: border-box;
 }
-[class*="container"] {
-  width: min(95%, 120rem);
+.container {
+  width: min(80%, 120rem);
   margin: auto;
 }
 p {
@@ -59,7 +63,7 @@ header {
   background: transparent;
   position: fixed;
   width: 100%;
-  z-index: 1;
+  z-index: 2;
 }
 header .header {
   padding: 27px 0;
@@ -193,13 +197,13 @@ footer .social-media .media-links {
   background: #a15aff;
   padding: 33px 19px;
 }
-footer .social-media .media-links ul{
-    list-style: none;
-    padding: 0;
+footer .social-media .media-links ul {
+  list-style: none;
+  padding: 0;
 }
-footer .social-media .media-links img{
-    width: 15px;
-    height: 15px;
+footer .social-media .media-links img {
+  width: 15px;
+  height: 15px;
 }
 .text-bold {
   font-size: 24px;
@@ -266,7 +270,7 @@ footer .grid {
 }
 #hero::after {
   background-image: url(~/assets/purple-transparent.svg);
-  height: 170px;
+  height: 220px;
   bottom: 0;
 }
 
@@ -297,23 +301,24 @@ footer .grid {
   font-weight: 700;
   line-height: 24px;
 }
-#hero .contact-container{
+#hero .contact-container {
   margin-top: 32px;
 }
-#hero .btn.contact{
+#hero .btn.contact {
   margin-right: 15px;
-  background-color: transparent;border-radius: 5px;
-  border: 1px solid #FFF;
+  background-color: transparent;
+  border-radius: 5px;
+  border: 1px solid #fff;
   backdrop-filter: blur(25px);
   color: var(--white);
 }
-.click-here{
+.click-here {
   position: relative;
 }
-.click-here::before{
-  content: '';
+.click-here::before {
+  content: "";
   width: 21px;
-height: 18px;
+  height: 18px;
   bottom: -18px;
   position: absolute;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='17' viewBox='0 0 24 17' fill='none'%3E%3Cpath d='M2.82029 11.5257C3.35054 11.6813 3.80839 11.8245 4.27109 11.9501C10.5375 13.6509 17.3074 11.2287 21.2438 5.88593C22.1214 4.69474 22.8237 3.40912 23.3569 2.02885C23.5465 1.53784 23.4122 1.13623 23.0161 0.97617C22.6114 0.812621 22.2306 1.02849 22.0324 1.53381C19.5856 7.77186 13.448 11.6164 6.9241 10.9878C5.79591 10.8791 4.69378 10.6353 3.62523 10.2544C3.55064 10.2279 3.48 10.1902 3.3483 10.1312C3.50483 10.0503 3.61223 9.99018 3.72328 9.93823C5.00301 9.3396 6.285 8.74598 7.56258 8.1426C8.06235 7.90656 8.20157 7.38765 7.88694 6.99698C7.66843 6.72563 7.35423 6.67209 6.95789 6.85595C5.62194 7.4757 4.28795 8.09989 2.95333 8.72266C2.38288 8.98884 1.81099 9.25188 1.24297 9.52337C0.754173 9.75699 0.621336 10.1094 0.842078 10.6076C1.68863 12.5182 2.53877 14.4272 3.39132 16.335C3.59303 16.7864 3.97454 16.9573 4.35813 16.7851C4.75455 16.6071 4.88321 16.1923 4.67585 15.7237C4.11827 14.4638 3.55594 13.206 2.99622 11.947C2.94384 11.8292 2.89662 11.709 2.82029 11.5257Z' fill='white'/%3E%3C/svg%3E");
@@ -322,7 +327,7 @@ height: 18px;
 }
 /* abour */
 #about {
-  padding: 100px 0 74px;
+  padding: 130px 0 74px;
   position: relative;
 }
 #about::before,
@@ -333,13 +338,105 @@ height: 18px;
   width: 100%;
 }
 #about::before {
-  top: -116px;
-  height: 170px;
+  top: -145px;
+  height: 220px;
   background-image: url(~/assets/purple-curve.svg);
 }
 #about::after {
-  top: -50px;
+  top: -70px;
   height: 151px;
   background-image: url(~/assets/white-curve.svg);
   z-index: 1;
+}
+.grid-2-col {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+.gap-6 {
+  gap: 6rem;
+}
+.text-end {
+  text-align: end;
+}
+.about-me h2 {
+  color: #1b023c;
+  font-family: var(--secondary-font);
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.about-me p {
+  color: #011b32;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}
+.about-me .btn.download {
+  padding: 13px 28px;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  background: #a15aff;
+  backdrop-filter: blur(25px);
+  color: #fff;
+  font-family: "Inter";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration: none;
+}
+#about .img-cont{
+  position: relative;
+  /* padding-top: ; */
+}
+#about .img-cont::before{
+  z-index: -1;
+  position: absolute;
+  top: -10%;
+  left: 39%;
+  content: '';
+  width: 129px;
+height: 109px;
+  border-radius: 5px;
+background: #A15AFF;
+}
+.about-me .download-btn{
+  position: relative;
+  width: 50%;
+  margin-left: 15px;
+}
+.about-me .download-btn::after{
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  left: 2%;
+  top:50%;
+  transform: translateY(-50%);
+  content: 'Take a Look';
+  color: #A15AFF;
+  font-family: Figma Hand;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px; 
+}
+.about-me .download-btn::before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 16px;
+  bottom: 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='17' viewBox='0 0 24 17' fill='none'%3E%3Cpath d='M2.91176 11.5257C3.44201 11.6813 3.89986 11.8245 4.36256 11.9501C10.629 13.6509 17.3989 11.2287 21.3353 5.88593C22.2129 4.69475 22.9152 3.40912 23.4483 2.02885C23.638 1.53784 23.5037 1.13623 23.1076 0.976174C22.7029 0.812624 22.3221 1.0285 22.1239 1.53381C19.6771 7.77186 13.5395 11.6164 7.01557 10.9878C5.88738 10.8791 4.78525 10.6353 3.7167 10.2544C3.64211 10.2279 3.57147 10.1902 3.43977 10.1312C3.5963 10.0503 3.7037 9.99018 3.81475 9.93824C5.09448 9.3396 6.37647 8.74598 7.65405 8.1426C8.15382 7.90656 8.29303 7.38766 7.97841 6.99698C7.75989 6.72563 7.4457 6.6721 7.04936 6.85596C5.71341 7.47571 4.37942 8.0999 3.0448 8.72266C2.47435 8.98884 1.90246 9.25189 1.33444 9.52337C0.845642 9.757 0.712805 10.1094 0.933547 10.6076C1.78009 12.5182 2.63024 14.4272 3.48279 16.335C3.6845 16.7864 4.06601 16.9573 4.4496 16.7851C4.84602 16.6071 4.97468 16.1923 4.76732 15.7237C4.20974 14.4638 3.6474 13.206 3.08769 11.947C3.03531 11.8292 2.98809 11.709 2.91176 11.5257Z' fill='%23A15AFF'/%3E%3C/svg%3E");
+
+}
+.about-me .download-container{
+  margin-top: 40px;
 }

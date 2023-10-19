@@ -1,9 +1,11 @@
 import image from "~/assets/img.png";
+import Skills from "./skills";
+import Tech from "./tech";
 const About = () => {
   return (
     <div id="about" className="">
-      <div className="flex container">
-        <div>
+      <div className="grid-2-col container gap-6">
+        <div className="text-end img-cont">
           <img src={image} alt="dev" />
         </div>
         <div className="about-me">
@@ -19,16 +21,20 @@ const About = () => {
             also extended to React.js, where I crafted dynamic and engaging web
             experiences.
           </p>
-          <div className="flex">
+          <div className="flex download-container">
             <a href="#" className="btn download">
               Download My CV
             </a>
-            <p>Take a Look</p>
+            <div className="download-btn"></div>
           </div>
         </div>
       </div>
       <div className="flex container">
         {/* slider */}
+        <Tech/>
+      </div>
+      <div className="container">
+        <Skills/>
       </div>
     </div>
   );

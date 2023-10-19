@@ -1,3 +1,4 @@
+import { ContactForm } from "./contactForm"
 
 const Contact = () => {
   return (
@@ -6,7 +7,7 @@ const Contact = () => {
 {/* filter */}
         </div>
         <div className="flex container">
-            
+            <ContactForm/>
         </div>
     </div>
   )
