@@ -1,14 +1,17 @@
-import { Link } from "@remix-run/react";
+import { Link, Links } from "@remix-run/react";
 import Navigation from "./navigation";
-import icon from '~/assets/react-icon.svg'
+import linkedin from '~/assets/linkedIn.svg'
+import mail from '~/assets/email.svg'
+import phone from '~/assets/phone.svg'
+import github from '~/assets/github.svg'
 const Footer = () => {
   return (
     <footer>
-      <div className="container grid">
+      <div className="container ">
         <div>
           {/*  */}
-          <p className="uppercase">Front End web Developer</p>
-          <p className="uppercase text-bold">Yeris Alejandra Aguilar</p>
+          <p className="text-uppercase">Front End web Developer</p>
+          <p className="text-uppercase fw-bold">Yeris Alejandra Aguilar</p>
           <p>Tijuana, MX</p>
           <div></div>
         </div>
@@ -16,7 +19,7 @@ const Footer = () => {
             <Navigation/>
         </div>
         <div className="text-center">
-          <p className="text-bold">Get Started<span className="uppercase"> TODAY!</span></p>
+          <p className="fw-bold">Get Started<span className="uppercase"> TODAY!</span></p>
           <Link to="#contact" className="btn contact">
             Contact
           </Link>
@@ -26,16 +29,19 @@ const Footer = () => {
         <div className="media-links">
           <ul>
             <li>
-              <img src={icon} alt="LinkedIn" />
+              <a href='https://www.linkedin.com/in/yeris-aguilar/'><img src={linkedin} alt="LinkedIn" /></a>
             </li>
             <li>
-              <img src={icon} alt="Email" />
+              <a href=''>
+              <img src={mail} alt="Email" /></a>
             </li>
             <li>
-              <img src={icon} alt="Phone" />
+              <a href=''>
+              <img src={phone} alt="Phone" /></a>
             </li>
             <li>
-              <img src={icon} alt="GitHub" />
+              <a href='https://github.com/Yalex95'>
+              <img src={github} alt="GitHub" /></a>
             </li>
           </ul>
         </div>

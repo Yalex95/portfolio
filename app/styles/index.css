@@ -6,6 +6,10 @@
   font-family: "Sansation";
   src: url(~/fonts/Sansation_Bold.ttf);
 }
+@font-face {
+  font-family: 'Zeyada';
+  src: url(~/fonts/Zeyada-Regular.ttf)
+}
 :root {
   --primary: #011b32;
   --secondary: #a15aff;
@@ -25,10 +29,6 @@ body {
 
 html {
   box-sizing: border-box;
-}
-.container {
-  width: min(80%, 120rem);
-  margin: auto;
 }
 p {
   color: var(--primary);
@@ -59,11 +59,16 @@ p {
 }
 /* header */
 header {
-  /* background: #190039; */
   background: transparent;
   position: fixed;
   width: 100%;
   z-index: 2;
+  transition: all ease-in 300ms;
+}
+.header.scrolled{
+  transition: all ease-in 300ms;
+  
+  background: #190039;
 }
 header .header {
   padding: 27px 0;
@@ -202,49 +207,13 @@ footer .social-media .media-links ul {
   padding: 0;
 }
 footer .social-media .media-links img {
-  width: 15px;
-  height: 15px;
+  width: 43px;
+height: 43px;
 }
-.text-bold {
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 700;
+footer .social-media .media-links ul li:not(footer .social-media .media-links ul li:last-child img) img {
+margin-bottom: 15px;
 }
-.uppercase {
-  text-transform: uppercase;
-}
-.justify-center {
-  justify-content: center;
-}
-.align-center {
-  align-items: center;
-}
-.row {
-  display: flex;
-  flex-direction: row;
-}
-.text-center {
-  text-align: center;
-}
-footer .grid {
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1fr;
-}
-.flex {
-  display: flex;
-}
-.grid {
-  display: grid;
-}
-.m-auto {
-  margin: auto;
-}
-.col-10 {
-  width: 40%;
-  flex-direction: column;
-  display: flex;
-  justify-content: center;
-}
+
 /* Hero */
 #hero {
   background: url(~/assets/bg.png);
@@ -314,6 +283,8 @@ footer .grid {
 }
 .click-here {
   position: relative;
+  font-family: 'Zeyada';
+  font-size: 24px;
 }
 .click-here::before {
   content: "";
@@ -399,7 +370,7 @@ footer .grid {
   z-index: -1;
   position: absolute;
   top: -10%;
-  left: 39%;
+  left: 18%;
   content: '';
   width: 129px;
 height: 109px;
@@ -411,6 +382,7 @@ background: #A15AFF;
   width: 50%;
   margin-left: 15px;
 }
+
 .about-me .download-btn::after{
   position: absolute;
   width: 100%;
@@ -420,8 +392,8 @@ background: #A15AFF;
   transform: translateY(-50%);
   content: 'Take a Look';
   color: #A15AFF;
-  font-family: Figma Hand;
-  font-size: 16px;
+  font-family: 'Zeyada';
+  font-size: 24px;
   font-style: normal;
   font-weight: 400;
   line-height: 16px; 
