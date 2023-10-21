@@ -109,7 +109,7 @@ header .language .icon {
   width: 0;
   height: 0;
 }
-
+/*
 .slider {
   position: absolute;
   cursor: pointer;
@@ -143,7 +143,7 @@ input:checked + .slider:before {
   transform: translateX(26px);
 }
 
-/* Rounded sliders */
+ Rounded sliders 
 .slider.round {
   border-radius: 34px;
 }
@@ -166,6 +166,7 @@ input:checked + .slider:before {
   font-weight: 400;
   line-height: normal;
 }
+*/
 .btn.contact {
   border-radius: 5px;
   background: #fff;
@@ -412,3 +413,28 @@ background: #A15AFF;
 .about-me .download-container{
   margin-top: 40px;
 }
+/* slider */
+.slider-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slide {
+  flex: 0 0 100%;
+  min-width: 100%;
+  text-align: center;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+.slide.active {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* Add additional styles as needed */
