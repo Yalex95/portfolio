@@ -1,5 +1,5 @@
 <template>
-  <section class="" id="about">
+  <section class="flex flex-col" id="about">
     <div class="container" id="about-me">
       <div class="about-desc">
         <h4 class="uppercase">Yeris Aguilar</h4>
@@ -28,5 +28,8 @@
           <div class="tech-slider"></div>
           <div class="skill-slider"></div>
         </div> -->
+    <div class="w-10/12 flex justify-center">
+      <Carousel />
+    </div>
   </section>
 </template>
