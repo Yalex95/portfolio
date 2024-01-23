@@ -1,1 +1,17 @@
-{}
+
+{
+    "about": "Sobre mi",
+    "aboutMeText": "Navegué hábilmente a través de una variada pila tecnológica, que incluye HTML, CSS, SASS, Bootstrap, JavaScript y jQuery. Demostré competencia en el control de versiones utilizando Git, con un enfoque particular en plataformas como GitHub y Bitbucket. Integré sin problemas APIs Restful, mejorando la funcionalidad y alcance de los proyectos. Además, contribuí al desarrollo de temas de WordPress, utilizando herramientas como ACF para crear soluciones robustas y personalizadas. Mi experiencia también se extendió a React.js, donde diseñé experiencias web dinámicas y atractivas.",
+    "contactText": "Contáctame",
+    "contactMeSub": "¡DALE VIDA A",
+    "contactMeSubtitle":"TU SITIO WEB SOÑADO!",
+    "contactMeDesc": "Desde las primeras sesiones de lluvia de ideas hasta el lanzamiento final, estaré a tu lado ofreciendo ideas, soluciones creativas y un apoyo inquebrantable. Comprendo que cada proyecto es único y estoy comprometido a adaptar nuestro viaje a tus necesidades y aspiraciones específicas. Ya sea que tengas un plan claro o solo la chispa de una idea, estoy aquí para ayudarte a darle forma a un verdadero obra maestra digital.",
+    "contact": "Contacto",
+    "downloadTextBtn": "Descarga mi CV!",
+    "heroDescription": "¡Hola! Soy Yeris, una apasionada desarrolladora web de front-end con habilidades para crear experiencias online cautivadoras. Contáctame hoy y creemos algo extraordinario juntos.",
+    "home": "Home",
+    "submit": "Enviar",
+    "showcase": "Muestra de Trabajos",
+    "recentProject": "Proyecto Reciente",
+    "projects": "Projectos"
+  }

@@ -1,17 +1,13 @@
 <template>
-  <section class="" id="contact">
-    <div class="container">
-      <div class="contact">
-        <p class="uppercase title">contact me</p>
+  <section class=" flex justify-center " id="contact">
+    <div class="w-10/12 flex ">
+      <div class="w-3/5">
+        <p class="uppercase title">{{ $t('contactText') }}</p>
         <h5 class="uppercase">
           BRING YOUR DREAM<br />
           WEBSITE TO LIFE!
         </h5>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus,
-          doloribus! Repellat, eaque asperiores dolores ad eum quidem quaerat
-          fuga nesciunt sed, sit, incidunt quisquam maxime tempore voluptatum
-          voluptatem? Pariatur, repellat.
+        <p>{{ $t('contactMeDesc') }}
         </p>
 
         <form id="contact-form">

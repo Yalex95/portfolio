@@ -7,13 +7,10 @@
         developer
       </h1>
       <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam
-        cumque natus soluta quo, voluptate dolorem ipsam ratione laborum
-        eligendi assumenda mollitia hic libero incidunt distinctio. Illo quam id
-        architecto similique!
+       {{ $t("heroDescription") }}
       </p>
       <div class="btn-container">
-        <a href="#contact" class="btn">Contact Me</a>
+        <a href="#contact" class="btn">{{ $t('contactText') }}</a>
       </div>
     </div>
   </section>

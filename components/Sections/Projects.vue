@@ -1,10 +1,10 @@
 <template>
   <section class="" id="projects">
     <div class="container">
-      <h4 class="uppercase">Works showcase</h4>
+      <h4 class="uppercase">{{ $t('showcase') }}</h4>
       <div class="recent-project">
         <div class="recent-project-desc">
-          <h5 class="uppercase">Recent Project</h5>
+          <h5 class="uppercase">{{ $t('recentProject') }}</h5>
           <h4 class="uppercase">project name</h4>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum dolore

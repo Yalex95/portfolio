@@ -1,1 +1,15 @@
-{}
+{
+  "about": "About",
+  "aboutMeText": "I skillfully navigated a diverse technology stack, including HTML, CSS, SASS, Bootstrap, JavaScript, and jQuery. I demonstrated proficiency in version control using Git, with a particular focus on platforms like GitHub and Bitbucket. I seamlessly integrated Restful APIs, enhancing the functionality and scope of projects. Furthermore, I contributed to WordPress theme development, employing tools like ACF to create robust and tailored solutions. My expertise also extended to React.js, where I crafted dynamic and engaging web experiences.",
+  "contactText": "Contact Me",
+  "contactMeSub": "BRING YOUR DREAM WEBSITE TO LIFE!",
+  "contactMeDesc": "From the initial brainstorming sessions to the final launch, I'll be by your side, offering insights, creative solutions, and unwavering support. I understand that every project is unique, and I'm committed to tailoring our journey to your specific needs and aspirations. Whether you have a clear roadmap or just the spark of an idea, I'm here to help you shape it into a digital masterpiece.",
+  "contact": "Contact",
+  "downloadTextBtn": "Download My Cv",
+  "heroDescription": "Hello! I'm Yeris, a passionate front-end web developer with a knack for crafting captivating online experiences.  Contact me today, and let's create something extraordinary together.",
+  "home": "Home",
+  "submit": "Submit",
+  "showcase": "Works Showcase",
+  "recentProject": "Recent Project",
+  "projects": "Projects"
+}

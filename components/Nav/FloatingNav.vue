@@ -29,5 +29,6 @@ const links = [
   position: fixed;
   top: 20%;
   padding: 33px 19px;
+  z-index: 1;
 }
 </style>
