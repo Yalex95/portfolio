@@ -1,5 +1,10 @@
 <template>
-  <Disclosure as="nav" class="navbar" v-slot="{ open }">
+  <Disclosure
+    as="nav"
+    :class="[{ scrolled: scrolled }, 'navbar']"
+    id="navbar"
+    v-slot="{ open }"
+  >
     <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
       <div class="relative flex h-16 items-center justify-between">
         <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -67,6 +72,8 @@ import {
   MenuItems,
 } from "@headlessui/vue";
 import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/vue/24/outline";
+// import useScrollClass from "~/plugins/scroll";
+const scrolled = ref(false);
 
 const navigation = [
   { name: "Home", href: "#hero", current: true },
@@ -74,12 +81,34 @@ const navigation = [
   { name: "Projects", href: "#projects", current: false },
   { name: "Contact", href: "#contact", current: false },
 ];
+
+const handleScroll = () => {
+  const navbar = document.getElementById("navbar"); // Replace 'navbar' with your actual navbar ID
+  if (navbar) {
+    const scrollPosition = window.scrollY || window.pageYOffset;
+    scrolled.value = scrollPosition > 0;
+  }
+};
+
+onMounted(() => {
+  window.addEventListener("scroll", handleScroll);
+});
+
+onUnmounted(() => {
+  window.removeEventListener("scroll", handleScroll);
+});
 </script>
 <style scoped>
 .navbar {
-  background-color: #190039;
+  background-color: transparent;
   position: fixed;
   z-index: 3;
   width: 100%;
+}
+.scrolled {
+  background-color: #190039;
+  position: fixed;
+  z-index: 3;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Example box shadow */
 }
 </style>
