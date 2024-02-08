@@ -27,12 +27,12 @@
   top: 0;
   z-index: 2;
 }
-.top-mobile ul {
+/* .top-mobile ul {
   display: flex;
   justify-content: end;
   gap: 0 0.5rem;
   margin: 5px auto 0;
-}
+} */
 .top-mobile ul li {
   list-style: none;
 }
@@ -53,12 +53,6 @@
 }
 /* Hero */
 #hero {
-  display: flex;
-  /* flex-direction: column; */
-  justify-content: center;
-  align-items: center;
-  /* margin-top: 50px; */
-  position: relative;
   height: 600px;
   background: rgb(52, 21, 93);
   background: -moz-linear-gradient(
@@ -102,38 +96,27 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
-#hero .container {
-  color: var(--white);
-}
 p {
   font-family: "Inter";
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
 }
-#hero .container h1 {
+#hero  h1 {
   font-family: "Sansation";
   font-size: 40px;
   font-weight: 700;
-  margin: 0;
 }
-#hero .container h6 {
+#hero  h6 {
   font-family: "Inter";
   font-size: 16px;
   font-weight: 700;
-  margin: 0;
 }
-#hero .container .btn {
+#hero  .btn {
   display: inline-flex;
-  margin-top: 10px;
 }
 /* about */
-#about {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 #about::before,
 #about::after {
   content: "";
@@ -156,7 +139,7 @@ p {
   background-size: cover;
 }
 
-#about .container h4 {
+#about  h4 {
   color: #1b023c;
   font-family: "Sansation";
   font-size: 20px;
@@ -166,7 +149,7 @@ p {
   text-transform: uppercase;
   margin-bottom: 0;
 }
-#about .container p {
+#about  p {
   color: #011b32;
   font-family: "Inter";
   font-size: 14px;
@@ -175,16 +158,13 @@ p {
   line-height: 24px; /* 171.429% */
 }
 
-#about .container .image-container {
-  display: flex;
-  justify-content: center;
+#about  .image-container {
   margin-top: 40px;
 }
-#about .container .image-container img {
+#about  .image-container img {
   max-width: 100%;
   width: 226px;
   height: 219px;
-  border-radius: 5px;
 }
 .btn-purple {
   text-decoration: none;
@@ -200,9 +180,9 @@ p {
   border: 1px solid #fff;
   background: #a15aff;
 }
-.button-container {
+/* .button-container {
   position: relative;
-}
+} */
 .button-container::before {
   position: absolute;
   content: "";
@@ -213,15 +193,15 @@ p {
   background-repeat: no-repeat;
 }
 
-#about .image-container img {
+/* #about .image-container img {
   position: relative;
   z-index: 1;
-}
-#about .image-container .image {
+} */
+/* #about .image-container .image {
   padding-top: 25px;
   padding-left: 30px;
   position: relative;
-}
+} */
 #about .image-container .image::before {
   content: "";
   position: absolute;

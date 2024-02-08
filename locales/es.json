@@ -13,5 +13,6 @@
     "submit": "Enviar",
     "showcase": "Muestra de Trabajos",
     "recentProject": "Proyecto Reciente",
-    "projects": "Projectos"
+    "projects": "Projectos",
+    "projectName":"project name" 
   }

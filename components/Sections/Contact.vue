@@ -4,8 +4,8 @@
       <div class="w-3/5">
         <p class="uppercase title">{{ $t('contactText') }}</p>
         <h5 class="uppercase">
-          BRING YOUR DREAM<br />
-          WEBSITE TO LIFE!
+          {{ $t('contactMeSub') }}<br />
+          {{ $t('contactMeSubtitle') }}
         </h5>
         <p>{{ $t('contactMeDesc') }}
         </p>

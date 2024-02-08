@@ -5,7 +5,7 @@
       <div class="recent-project">
         <div class="recent-project-desc">
           <h5 class="uppercase">{{ $t('recentProject') }}</h5>
-          <h4 class="uppercase">project name</h4>
+          <h4 class="uppercase">{{ $t('projectName') }}</h4>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum dolore
             non possimus laboriosam animi saepe voluptatem nobis quia,
