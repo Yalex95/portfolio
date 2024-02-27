@@ -19,7 +19,7 @@
           </DisclosureButton>
         </div>
         <div
-          class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start"
+          class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-between"
         >
           <div class="hidden sm:ml-6 sm:block">
             <div class="flex space-x-4">
@@ -35,6 +35,9 @@
                 >{{ item.name }}</a
               >
             </div>
+          </div>
+          <div class="hidden sm:block">
+            <img src="/assets/icons/language.png" alt="world icon" />
           </div>
         </div>
       </div>
