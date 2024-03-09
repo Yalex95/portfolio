@@ -37,7 +37,29 @@
             </div>
           </div>
           <div class="hidden sm:block">
-            <img src="/assets/icons/language.png" alt="world icon" />
+            <label class="inline-flex items-center cursor-pointer">
+              <img
+                src="/assets/icons/language.png"
+                alt="world icon"
+                class="mr-3"
+              />
+              <input
+                type="checkbox"
+                v-model="isChecked"
+                class="sr-only peer"
+                @change="handleCheckboxChange"
+              />
+              <div
+                :class="{
+                  'peer-checked:after:translate-x-full': isChecked,
+                  'rtl:peer-checked:after:-translate-x-full': isChecked,
+                }"
+                class="flex gap-1 justify-center items-center dark:bg-transparent ring-2 ring-[#A15AFF] relative w-11 h-6 bg-transparent peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-[#A15AFF] dark:peer-focus:ring-[#A15AFF] rounded-full peer peer-checked:after:border-[#A15AFF] after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-[#A15AFF] after:border-transparent after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-transparent peer-checked:bg-transparent"
+              >
+                <p class="text-white text-xs">ES</p>
+                <p class="text-white text-xs">EN</p>
+              </div>
+            </label>
           </div>
         </div>
       </div>
@@ -75,9 +97,13 @@ import {
   MenuItems,
 } from "@headlessui/vue";
 import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/vue/24/outline";
+import Cookie from "cookie-universal";
+import { useI18n } from "vue-i18n";
+const $cookies = Cookie();
+let translate = useI18n();
 // import useScrollClass from "~/plugins/scroll";
 const scrolled = ref(false);
-
+const isChecked = ref(false);
 const navigation = [
   { name: "Home", href: "#hero", current: true },
   { name: "About", href: "#about", current: false },
@@ -100,6 +126,20 @@ onMounted(() => {
 onUnmounted(() => {
   window.removeEventListener("scroll", handleScroll);
 });
+
+const handleCheckboxChange = (e) => {
+  console.log($cookies.get("locale"));
+  isChecked.value = e.target.checked;
+
+  if (isChecked.value) {
+    translate.locale.value = "es";
+    $cookies.set("locale", "es");
+  }
+  if (!isChecked.value) {
+    translate.locale.value = "en";
+    $cookies.set("locale", "en");
+  }
+};
 </script>
 <style scoped>
 .navbar {

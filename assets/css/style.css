@@ -102,17 +102,17 @@ p {
   font-weight: 400;
   line-height: 24px;
 }
-#hero  h1 {
+#hero h1 {
   font-family: "Sansation";
   font-size: 40px;
   font-weight: 700;
 }
-#hero  h6 {
+#hero h6 {
   font-family: "Inter";
   font-size: 16px;
   font-weight: 700;
 }
-#hero  .btn {
+#hero .btn {
   display: inline-flex;
 }
 /* about */
@@ -139,7 +139,7 @@ p {
   background-size: cover;
 }
 
-#about  h4 {
+#about h4 {
   color: #1b023c;
   font-family: "Sansation";
   font-size: 20px;
@@ -149,7 +149,7 @@ p {
   text-transform: uppercase;
   margin-bottom: 0;
 }
-#about  p {
+#about p {
   color: #011b32;
   font-family: "Inter";
   font-size: 14px;
@@ -158,10 +158,10 @@ p {
   line-height: 24px; /* 171.429% */
 }
 
-#about  .image-container {
+#about .image-container {
   margin-top: 40px;
 }
-#about  .image-container img {
+#about .image-container img {
   max-width: 100%;
   width: 226px;
   height: 219px;
@@ -430,7 +430,11 @@ p {
   gap: 10px;
 }
 
-.links ul li a,
+.links ul li a{
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: background ease-in-out 500ms;
+}
 ul.social li a {
   display: block;
   width: 43px;
@@ -672,17 +676,20 @@ ul.social li a {
   #hero::after {
     background-image: url(/assets/purple-transparent.svg);
     height: 290px;
-    bottom: 0%;
+    bottom: 0;
+    background-size: contain;
   }
   #about::before {
     background-image: url(/assets/purple-curve.svg);
     height: 251px;
-    top: -40%;
+    top: -30%;
+    background-size: contain;
   }
   #about::after {
     background-image: url(/assets/white-curve.svg);
     height: 200px;
-    top: -25%;
+    top: -20%;
+    background-size: contain;
   }
   #hero .container {
     width: 40%;

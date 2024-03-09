@@ -1,14 +1,13 @@
 <template>
-  <section class=" flex justify-center " id="contact">
-    <div class="w-10/12 flex ">
+  <section class="flex justify-center" id="contact">
+    <div class="w-10/12 flex">
       <div class="w-3/5">
-        <p class="uppercase title">{{ $t('contactText') }}</p>
+        <p class="uppercase title">{{ $t("contactText") }}</p>
         <h5 class="uppercase">
-          {{ $t('contactMeSub') }}<br />
-          {{ $t('contactMeSubtitle') }}
+          {{ $t("contactMeSub") }}<br />
+          {{ $t("contactMeSubtitle") }}
         </h5>
-        <p>{{ $t('contactMeDesc') }}
-        </p>
+        <p>{{ $t("contactMeDesc") }}</p>
 
         <form id="contact-form">
           <input type="text" name="user_name" placeholder="Full Name *" />

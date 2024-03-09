@@ -8,14 +8,14 @@ export default defineNuxtPlugin(({ vueApp }) => {
   let locale = $cookies.get("locale");
 
   if (!locale) {
-    $cookies.set("locale", "es");
-    locale = "es";
+    $cookies.set("locale", "en");
+    locale = "en";
   }
   const i18n = createI18n({
     legacy: false,
     globalInjection: true,
     locale: locale,
-    fallbackLocale: "es",
+    fallbackLocale: "en",
     messages: {
       en,
       es,

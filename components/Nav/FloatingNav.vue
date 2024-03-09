@@ -4,9 +4,9 @@
       <div>
         <!-- contact links -->
         <ul class="flex flex-col gap-y-4">
-          <li v-for="link in links" :key="link.alt">
-            <a :href="link.url">
-              <img :src="link.icon" :alt="link.alt" />
+          <li v-for="link in links" :key="link.alt" class="">
+            <a :href="link.url" class=" rounded-lg flex justify-center items-center w-10 h-10" :class="[`bg-[url(${link.icon})] hover:bg-[url(${link.hover})]`]">
+              <!-- <img :src="link.icon" :alt="link.alt" /> -->
             </a>
           </li>
         </ul>
@@ -16,10 +16,10 @@
 </template>
 <script setup>
 const links = [
-  { url: "", icon: "/assets/linkedIn.svg", alt: "LinkedIn icon" },
-  { url: "", icon: "/assets/email.svg", alt: "Email icon" },
-  { url: "", icon: "/assets/phone.svg", alt: "Phone icon" },
-  { url: "", icon: "/assets/github.svg", alt: "Github icon" },
+  { url: "", icon: "/assets/linkedin.png",hover:"/assets/linkedin.png", alt: "LinkedIn icon" },
+  { url: "", icon: "/assets/email.png",hover:"/assets/email.png", alt: "Email icon" },
+  { url: "", icon: "/assets/phone.png",hover:"/assets/phone.png", alt: "Phone icon" },
+  { url: "", icon: "/assets/github.png",hover:"/assets/github.png", alt: "Github icon" },
 ];
 </script>
 <style>
