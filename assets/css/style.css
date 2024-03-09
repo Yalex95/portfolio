@@ -96,6 +96,19 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
+#hero .click-here::after {
+  content: "Click here";
+  background-image: url(/assets/white_arrow.svg);
+  background-repeat: no-repeat;
+  background-size: 20%;
+  background-position: left;
+  position: absolute;
+  font-size: 1.3rem;
+  height: 55px;
+  width: 80px;
+
+  font-family: "Zeyada";
+}
 p {
   font-family: "Inter";
   font-size: 14px;
@@ -180,9 +193,6 @@ p {
   border: 1px solid #fff;
   background: #a15aff;
 }
-/* .button-container {
-  position: relative;
-} */
 .button-container::before {
   position: absolute;
   content: "";
@@ -193,15 +203,6 @@ p {
   background-repeat: no-repeat;
 }
 
-/* #about .image-container img {
-  position: relative;
-  z-index: 1;
-} */
-/* #about .image-container .image {
-  padding-top: 25px;
-  padding-left: 30px;
-  position: relative;
-} */
 #about .image-container .image::before {
   content: "";
   position: absolute;
@@ -430,10 +431,11 @@ p {
   gap: 10px;
 }
 
-.links ul li a{
+.links ul li {
   background-repeat: no-repeat;
   background-size: contain;
   transition: background ease-in-out 500ms;
+  background-color: white;
 }
 ul.social li a {
   display: block;
@@ -675,13 +677,13 @@ ul.social li a {
   }
   #hero::after {
     background-image: url(/assets/purple-transparent.svg);
-    height: 290px;
+    height: 320px;
     bottom: 0;
     background-size: contain;
   }
   #about::before {
     background-image: url(/assets/purple-curve.svg);
-    height: 251px;
+    height: 260px;
     top: -30%;
     background-size: contain;
   }
@@ -838,5 +840,21 @@ ul.social li a {
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1200px) and (max-width:1600px) {
+  #about::after {
+    top: -19%;
+  }
+  #hero::after {
+    height: 270px;
+  }
+  #about::before {
+    height: 210px;
+    top: -25%;
+  }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1600px) {
+  #about::after {
+    top: -20%;
+  }
 }

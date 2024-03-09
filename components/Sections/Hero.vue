@@ -12,10 +12,13 @@
       <p>
         {{ $t("heroDescription") }}
       </p>
-      <div class="btn-container mt-5">
-        <a href="#contact" class="btn cursor-pointer z-10 relative">{{
+      <div
+        class="btn-container mt-5 relative flex-row flex justify-center gap-2"
+      >
+        <a href="#contact" class="btn cursor-pointer z-10">{{
           $t("contactText")
         }}</a>
+        <div class="click-here relative"></div>
       </div>
     </div>
   </section>

@@ -4,9 +4,18 @@
       <div>
         <!-- contact links -->
         <ul class="flex flex-col gap-y-4">
-          <li v-for="link in links" :key="link.alt" class="">
-            <a :href="link.url" class=" rounded-lg flex justify-center items-center w-10 h-10" :class="[`bg-[url(${link.icon})] hover:bg-[url(${link.hover})]`]">
-              <!-- <img :src="link.icon" :alt="link.alt" /> -->
+          <li
+            v-for="link in links"
+            :key="link.alt"
+            class="rounded-lg flex justify-center items-center w-10 h-10 hover:bg-[#1F0642]"
+          >
+            <a
+              :href="link.url"
+              class="bg-contain bg-center w-6 h-6 bg-no-repeat"
+              :style="{
+                'background-image': `url(${link.icon})`,
+              }"
+            >
             </a>
           </li>
         </ul>
@@ -16,10 +25,26 @@
 </template>
 <script setup>
 const links = [
-  { url: "", icon: "/assets/linkedin.png",hover:"/assets/linkedin.png", alt: "LinkedIn icon" },
-  { url: "", icon: "/assets/email.png",hover:"/assets/email.png", alt: "Email icon" },
-  { url: "", icon: "/assets/phone.png",hover:"/assets/phone.png", alt: "Phone icon" },
-  { url: "", icon: "/assets/github.png",hover:"/assets/github.png", alt: "Github icon" },
+  {
+    url: "https://www.linkedin.com/in/yeris-aguilar/",
+    icon: "/assets/linkedin_nav.svg",
+    alt: "LinkedIn icon",
+  },
+  {
+    url: "mailto:yerisaguilar95@gmail.com",
+    icon: "/assets/email_nav.svg",
+    alt: "Email icon",
+  },
+  {
+    url: "tel:+529632337458",
+    icon: "/assets/phone_nav.svg",
+    alt: "Phone icon",
+  },
+  {
+    url: "https://github.com/Yalex95",
+    icon: "/assets/github_nav.svg",
+    alt: "Github icon",
+  },
 ];
 </script>
 <style>
