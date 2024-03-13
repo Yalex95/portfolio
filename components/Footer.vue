@@ -22,9 +22,9 @@
             </li>
           </ul>
         </div>
-        <div class="hidden md:block w-1/3">
-          <p class="text-2xl">Get Started TODAY!</p>
-          <a href="" class="btn-white mt-2"> contact me</a>
+        <div class="hidden md:block w-1/3 lg:flex flex-col items-center">
+          <p class="text-2xl font-semibold">Get Started TODAY!</p>
+          <a href="" class="btn-white mt-2 text-center"> contact me</a>
         </div>
       </div>
     </footer>

@@ -3,8 +3,8 @@
     <div>
       <SectionsHero />
       <SectionsAbout />
-      <SectionsProjects />
-      <SectionsContact />
+      <!-- <SectionsProjects />
+      <SectionsContact /> -->
     </div>
   </NuxtLayout>
 </template>

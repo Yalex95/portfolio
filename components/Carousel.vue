@@ -1,6 +1,6 @@
 <template>
   <Swiper
-    class=""
+    class="w-full"
     :modules="[SwiperAutoplay, SwiperEffectCreative]"
     :slides-per-view="3"
     :loop="true"
@@ -9,6 +9,7 @@
       delay: 8000,
       disableOnInteraction: true,
     }"
+    spaceBetween="{30}"
     :creative-effect="{
       prev: {
         shadow: false,
@@ -19,8 +20,8 @@
       },
     }"
   >
-    <SwiperSlide v-for="slide in 15" :key="slide">
-      <strong>{{ slide }}</strong>
+    <SwiperSlide v-for="slide in 15" :key="slide" class="bg-white">
+      <div class="bg-white">{{ slide }}</div>
     </SwiperSlide>
 
     <div class="swiper-button-prev"></div>
@@ -39,10 +40,10 @@
   font-weight: bold;
   font-family: "Roboto", sans-serif;
 }
-.swiper-wrapper {
+/* .swiper-wrapper {
   min-width: 100vh;
   width: 100vh;
-}
+} */
 .swiper-cards {
   width: 240px;
   height: 240px;

@@ -1,11 +1,11 @@
 <template>
   <section class="" id="projects">
     <div class="container">
-      <h4 class="uppercase">{{ $t('showcase') }}</h4>
+      <h4 class="uppercase">{{ $t("showcase") }}</h4>
       <div class="recent-project">
         <div class="recent-project-desc">
-          <h5 class="uppercase">{{ $t('recentProject') }}</h5>
-          <h4 class="uppercase">{{ $t('projectName') }}</h4>
+          <h5 class="uppercase">{{ $t("recentProject") }}</h5>
+          <h4 class="uppercase">{{ $t("projectName") }}</h4>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum dolore
             non possimus laboriosam animi saepe voluptatem nobis quia,
@@ -23,8 +23,9 @@
       </div>
       <div class="projects-filter">
         <button class="btn-purple-border active">All Projects</button>
-        <button class="btn-purple-border">React JS</button>
-        <button class="btn-purple-border">Wordpress</button>
+        <button class="btn-purple-border">React Js</button>
+        <button class="btn-purple-border">WordPress</button>
+        <button class="btn-purple-border">Vue Js</button>
       </div>
       <div class="projects-container">
         <div
