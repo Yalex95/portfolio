@@ -23,32 +23,44 @@
 <script setup>
 const techStack = [
   {
-    asset: "bitbucket.svg",
-    tech: "Bitbucket",
+    asset: "wp.svg",
+    tech: "WordPress",
+  },
+  {
+    asset: "js.svg",
+    tech: "JavaScript",
   },
   {
     asset: "vue.svg",
     tech: "Vue JS",
   },
   {
-    asset: "css.svg",
-    tech: "CSS",
-  },
-  {
     asset: "git.svg",
     tech: "Git",
+  },
+  {
+    asset: "github_.svg",
+    tech: "Git Hub",
+  },
+  {
+    asset: "bitbucket.svg",
+    tech: "Bitbucket",
+  },
+  {
+    asset: "html.svg",
+    tech: "HTML",
+  },
+  {
+    asset: "css.svg",
+    tech: "CSS",
   },
   {
     asset: "boostrap.svg",
     tech: "Bootstrap",
   },
   {
-    asset: "wp.svg",
-    tech: "WordPress",
-  },
-  {
-    asset: "github_.svg",
-    tech: "Git Hub",
+    asset: "tailwind.svg",
+    tech: "Tailwind",
   },
 ];
 </script>
