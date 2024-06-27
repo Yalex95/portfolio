@@ -24,49 +24,46 @@
     </div>
     <!-- skills -->
     <div id="skills" class="flex justify-between w-full px-40 py-10">
-      <div class="text-center">
-        <img src="/assets/wp.svg" class="w-30 h-30" alt="wordpress icon" />
-        <p class="mt-3 text-[#adaeaf]">WordPress</p>
-      </div>
-      <div class="text-center">
+      <!-- <div v-for="item in techStack" :key="item" class="text-center">
         <img
-          src="/assets/bitbucket.svg"
+          :src="`/assets/${item.asset}`"
           class="w-30 h-30"
-          alt="Bitbucket icon"
+          alt="wordpress icon"
         />
-        <p class="mt-3 text-[#adaeaf]">Bitbucket</p>
-      </div>
-      <div class="text-center">
-        <img src="/assets/vue.svg" class="w-30 h-30" alt="vue icon" />
-        <p class="mt-3 text-[#adaeaf]">Vue.js</p>
-      </div>
-      <div class="text-center">
-        <img src="/assets/css.svg" class="w-30 h-30" alt="css icon" />
-        <p class="mt-3 text-[#adaeaf]">CSS</p>
-      </div>
-      <div class="text-center">
-        <img
-          src="/assets/boostrap.svg"
-          class="w-30 h-30"
-          alt="bootstrap icon"
-        />
-        <p class="mt-3 text-[#adaeaf]">Bootstrap</p>
-      </div>
-      <div class="text-center">
-        <img src="/assets/git.svg" class="w-30 h-30" alt="git icon" />
-        <p class="mt-3 text-[#adaeaf]">Git</p>
-      </div>
-      <div class="text-center">
-        <img src="/assets/github_.svg" class="w-30 h-30" alt="wordpress icon" />
-        <p class="mt-3 text-[#adaeaf] font-semibold">WordPress</p>
-      </div>
+        <p class="mt-3 text-[#adaeaf]">{{ item.tech }}</p>
+      </div> -->
+      <Slider />
     </div>
     <!-- <div class="container">
           <div class="tech-slider"></div>
           <div class="skill-slider"></div>
         </div> -->
-    <!-- <div class="w-10/12 flex justify-center">
+    <!-- <div class="w-10/12 flex justify-center"> 
       <Carousel />
     </div> -->
   </section>
 </template>
+<script setup>
+const techStack = [
+  {
+    asset: "bitbucket.svg",
+    tech: "Bitbucket",
+  },
+  {
+    asset: "vue.svg",
+    tech: "Vue JS",
+  },
+  {
+    asset: "css.svg",
+    tech: "CSS",
+  },
+  {
+    asset: "git.svg",
+    tech: "Git",
+  },
+  {
+    asset: "github_.svg",
+    tech: "Git Hub",
+  },
+];
+</script>
