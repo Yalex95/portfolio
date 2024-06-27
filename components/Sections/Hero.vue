@@ -23,3 +23,75 @@
     </div>
   </section>
 </template>
+<style>
+#hero {
+  height: 600px;
+  background: rgb(52, 21, 93);
+  background: -moz-linear-gradient(
+    0deg,
+    rgba(52, 21, 93, 1) 0%,
+    rgba(30, 4, 64, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    0deg,
+    rgba(52, 21, 93, 1) 0%,
+    rgba(30, 4, 64, 1) 100%
+  );
+  background: linear-gradient(
+    0deg,
+    rgba(52, 21, 93, 1) 0%,
+    rgba(30, 4, 64, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#34155d",endColorstr="#1e0440",GradientType=1);
+}
+#hero span {
+  display: none;
+}
+#hero::before {
+  content: "";
+  position: absolute;
+  background-image: url(/assets/Hero-Pattern.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-position: bottom; */
+  width: 100%;
+  height: 400px;
+  bottom: 0;
+}
+#hero::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 74px;
+  background-image: url(/assets/mobile-curve-p.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#hero .click-here::after {
+  content: "Click here";
+  background-image: url(/assets/white_arrow.svg);
+  background-repeat: no-repeat;
+  background-size: 20%;
+  background-position: left;
+  position: absolute;
+  font-size: 1.3rem;
+  height: 55px;
+  width: 80px;
+
+  font-family: "Zeyada";
+}
+#hero h1 {
+  font-family: "Sansation";
+  font-size: 40px;
+  font-weight: 700;
+}
+#hero h6 {
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 700;
+}
+#hero .btn {
+  display: inline-flex;
+}
+</style>

@@ -24,23 +24,8 @@
     </div>
     <!-- skills -->
     <div id="skills" class="flex justify-between w-full px-40 py-10">
-      <!-- <div v-for="item in techStack" :key="item" class="text-center">
-        <img
-          :src="`/assets/${item.asset}`"
-          class="w-30 h-30"
-          alt="wordpress icon"
-        />
-        <p class="mt-3 text-[#adaeaf]">{{ item.tech }}</p>
-      </div> -->
-      <Slider />
+      <!-- <Slider /> -->
     </div>
-    <!-- <div class="container">
-          <div class="tech-slider"></div>
-          <div class="skill-slider"></div>
-        </div> -->
-    <!-- <div class="w-10/12 flex justify-center"> 
-      <Carousel />
-    </div> -->
   </section>
 </template>
 <script setup>
@@ -67,3 +52,66 @@ const techStack = [
   },
 ];
 </script>
+<style>
+
+#about::before,
+#about::after {
+  content: "";
+  position: absolute;
+  background-repeat: no-repeat;
+}
+#about::before {
+  background-image: url(/assets/mobile-curve.svg);
+  width: 100%;
+  height: 60px;
+  top: -8%;
+  background-size: cover;
+}
+#about::after {
+  background-image: url(/assets/mobile-curve-white.svg);
+  width: 100%;
+  height: 60px;
+  top: -6%;
+
+  background-size: cover;
+}
+
+#about h4 {
+  color: #1b023c;
+  font-family: "Sansation";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+#about p:not(#about #skills p) {
+  color: #011b32;
+  font-family: "Inter";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 171.429% */
+}
+
+#about .image-container {
+  margin-top: 40px;
+}
+#about .image-container img {
+  max-width: 100%;
+  width: 226px;
+  height: 219px;
+}
+#about .image-container .image::before {
+  content: "";
+  position: absolute;
+  width: 87px;
+  height: 73px;
+  top: 0;
+  left: 0;
+  border-radius: 5px;
+  background: #a15aff;
+  z-index: 0;
+}
+</style>

@@ -29,3 +29,42 @@
     </div>
   </section>
 </template>
+<style>
+#contact {
+  padding: 100px 0 72px;
+}
+#contact p.title {
+  color: #a15aff;
+  font-family: "Sansation";
+  font-size: 16px;
+  font-weight: 700;
+}
+#contact h5 {
+  color: #1b023c;
+  font-family: "Inter";
+  font-size: 18px;
+  font-weight: 700;
+  /* margin: 0; */
+}
+#contact p {
+  color: #011b32;
+}
+#contact #contact-form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+}
+#contact #contact-form input,
+#contact #contact-form textarea {
+  border-radius: 5px;
+  border: 1px solid #a15aff;
+  background: #f9f9f9;
+  padding: 15px;
+}
+#contact-form .form-group {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(24rem, 1fr));
+  gap: 10px;
+}
+
+</style>
