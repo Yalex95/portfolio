@@ -1,5 +1,5 @@
 <template>
-  <section class=" flex justify-center items-center pt-20" id="projects">
+  <section class="flex justify-center items-center pt-20" id="projects">
     <div class="container">
       <h4 class="uppercase text-[#011b32]">{{ $t("showcase") }}</h4>
       <div class="recent-project">
@@ -14,9 +14,7 @@
           </p>
           <a href="" class="btn-purple">Learn more</a>
         </div>
-        <div
-          class="project bg-[url(/assets/project-recent.png)]"
-        >
+        <div class="project bg-[url(/assets/project-recent.png)]">
           <a href="" class="btn">GitHub</a>
         </div>
       </div>
@@ -28,16 +26,18 @@
       </div>
       <div class="projects-container">
         <div
+          v-for="(project, index) in projects"
+          :key="index"
           class="project-container"
           style="background-image: url(/assets/project.png)"
         >
           <div class="project-body">
             <img
               class="img-fluid"
-              src="/assets/react-icon.svg"
-              alt="project tech"
+              :src="`/assets/${project.icon}`"
+              :alt="project.category"
             />
-            <p class="name">Project Name</p>
+            <p class="name">{{ project.name }} {{ index }}</p>
           </div>
         </div>
       </div>
@@ -46,60 +46,19 @@
   </section>
 </template>
 <script setup>
-const projacts = [
-  {
-    logo: "wp.svg",
-    title: "Project Title",
-    description:
-      "Lorem ipsum dolor sit amet consectetur. Tincidunt id viverra vitae posuere arcu eget non euismod. ",
+const props = defineProps({
+  projects: {
+    default: () => [],
+    type: Array,
   },
-  {
-    logo: "wp.svg",
-    title: "Project Title",
-    description:
-      "Lorem ipsum dolor sit amet consectetur. Tincidunt id viverra vitae posuere arcu eget non euismod. ",
-  },
-  {
-    logo: "wp.svg",
-    title: "Project Title",
-    description:
-      "Lorem ipsum dolor sit amet consectetur. Tincidunt id viverra vitae posuere arcu eget non euismod. ",
-  },
-  {
-    logo: "wp.svg",
-    title: "Project Title",
-    description:
-      "Lorem ipsum dolor sit amet consectetur. Tincidunt id viverra vitae posuere arcu eget non euismod. ",
-  },
-  {
-    logo: "wp.svg",
-    title: "Project Title",
-    description:
-      "Lorem ipsum dolor sit amet consectetur. Tincidunt id viverra vitae posuere arcu eget non euismod. ",
-  },
-  {
-    logo: "wp.svg",
-    title: "Project Title",
-    description:
-      "Lorem ipsum dolor sit amet consectetur. Tincidunt id viverra vitae posuere arcu eget non euismod. ",
-  },
-  {
-    logo: "wp.svg",
-    title: "Project Title",
-    description:
-      "Lorem ipsum dolor sit amet consectetur. Tincidunt id viverra vitae posuere arcu eget non euismod. ",
-  },
-];
+});
+
+let selectedCategory = ref(0);
+console.log(props.projects);
+const uniqueCats = [...new Set(props.projects.map((obj) => obj.category))];
+console.log(uniqueCats);
 </script>
 <style>
-#projects {
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* justify-content: center;
-  align-items: center;
-  padding-top: 86px; */
-}
-
 #projects .container h4 {
   /* color: #011b32; */
   font-family: Sansation;
@@ -107,16 +66,13 @@ const projacts = [
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  /* text-transform: uppercase; */
 }
 #projects .container h5 {
-  /* color: #a15aff; */
   font-family: Sansation;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  /* text-transform: uppercase; */
 }
 #projects .container .project {
   margin-top: 40px;
@@ -124,7 +80,6 @@ const projacts = [
   display: flex;
   justify-content: center;
   align-items: center;
-  /* width: 296px; */
   height: 132px;
   flex-shrink: 0;
   border-radius: 5px;

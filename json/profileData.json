@@ -1,0 +1,158 @@
+{
+  "banner": {
+          "title":"front-end",
+          "subtitle":"web developer",
+          "description":"Hello there! I'm Yeris, and I am a passionate front-end web developer with a deep love for crafting captivating digital experiences. My journey in the world of web development has led me to master a diverse array of front end web tools and technologies."
+      }
+  ,
+  "social": [
+      {    
+          "data":"https://github.com/Yalex95",
+          "icon": "fa-brands fa-github"
+      },{
+          "data": "https://stackoverflow.com/users/15331013/yeris-aguilar",
+          "icon": "fa-brands fa-stack-overflow"
+      },{
+          "data":"https://www.linkedin.com/in/yeris-alejandra-aguilar-gordillo-a07aa9191/",
+          "icon": "fa-brands fa-linkedin"
+      }
+  ],
+  "tech": {
+      "title":"Why Hire Me?",
+      "subtitle":"I'm Experienced Front-End Developer",
+      "paragraph":"with a Track Record of Excellence",
+      "description":"I skillfully navigated a diverse technology stack, including HTML, CSS, SASS, Bootstrap, JavaScript, and jQuery. I demonstrated proficiency in version control using Git, with a particular focus on platforms like GitHub and Bitbucket. I seamlessly integrated RESTful APIs, enhancing the functionality and scope of projects. Furthermore, I contributed to WordPress theme development, employing tools like ACF to create robust and tailored solutions. My expertise also extended to React.js, where I crafted dynamic and engaging web experiences.",
+      "technologies": [
+          {
+              "icon": "fa-brands fa-wordpress",
+              "tech":"WP Theme Dev"
+          },
+          {
+              "icon": "fa-brands fa-php",
+              "tech":"PHP"
+          },
+          {
+              "icon": "fa-brands fa-react",
+              "tech":"React JS"
+          },
+          {
+              "icon": "fa-brands fa-sass",
+              "tech":"Sass"
+          },
+          {
+              "icon": "fa-brands fa-js",
+              "tech":"JavaScript"
+          },
+          {
+              "icon": "fa-brands fa-html5",
+              "tech":"HTML 5"
+          },
+          {
+              "icon": "fa-brands fa-css3-alt",
+              "tech":"css"
+          },
+          {
+              "icon": "fa-brands fa-bootstrap",
+              "tech":"bootstrap"
+          },
+          {
+              "icon": "fa-brands fa-github",
+              "tech":"Github"
+          },
+          {
+              "icon": "fa-brands fa-git",
+              "tech":"Git"
+          },
+          {
+              "icon": "fa-brands fa-bitbucket",
+              "tech":"Bitbucket"
+          }
+      ]
+  },
+  "projects":[
+      
+      { 
+          "name": "Franchoice",
+          "icon": "fa-brands fa-wordpress", 
+          "description": "is a project I contributed to, playing a pivotal role in its creation. This project was built using a combination of technologies and tools, including ACF (Advanced Custom Fields) for flexible content management, the WP API (WordPress API) for data retrieval and manipulation, WordPress as the core platform, PHP as the server-side scripting language, JavaScript for dynamic interactions, and the Bootstrap framework along with Bootscore WP Starter for responsive design and a solid foundation. The collaboration resulted in a dynamic and user-friendly web solution that showcases the power of synergy between different technologies.", 
+          "category": "wordpress",
+          "link":"https://www.franchoice.com/",
+          "github_link":""
+          
+      },
+      {   
+          "name": "Groovy Hues",
+          "icon": "fa-brands fa-wordpress", 
+          "description": "is a project I contributed to, playing a pivotal role in its creation. This project was built using a combination of technologies and tools, including ACF (Advanced Custom Fields) for flexible content management, the WP API (WordPress API) for data retrieval and manipulation, WordPress as the core platform, PHP as the server-side scripting language, JavaScript for dynamic interactions, and the Bootstrap framework along with Bootscore WP Starter for responsive design and a solid foundation. The collaboration resulted in a dynamic and user-friendly web solution that showcases the power of synergy between different technologies.", 
+          "category": "wordpress",
+          "link":"https://groovyhues.com/",
+          "github_link":""
+          },
+      {   
+          "name": "Bumble Blinds",
+          "icon": "fa-brands fa-wordpress", 
+          "description": "is a project I contributed to, playing a pivotal role in its creation. This project was built using a combination of technologies and tools, including ACF (Advanced Custom Fields) for flexible content management, the WP API (WordPress API) for data retrieval and manipulation, WordPress as the core platform, PHP as the server-side scripting language, JavaScript for dynamic interactions, and the Bootstrap framework along with Bootscore WP Starter for responsive design and a solid foundation. The collaboration resulted in a dynamic and user-friendly web solution that showcases the power of synergy between different technologies.", 
+          "category": "wordpress",
+          "link":"https://bumblebeeblinds.com/",
+          "github_link":""
+          },
+      {   
+          "name": "TO-DO List",
+          "icon": "fa-brands fa-react", 
+          "description": "This project was made with Firebase real time data base and React js framework. *Adds TODO items to database *Delete TODO items to database *updates completed items", 
+          "category": "react",
+          "link":"https://yalex95.github.io/TodoListCrud/",
+          "github_link":""
+          },
+          {   
+              "name": "Portfolio",
+              "icon": "fa-brands fa-react", 
+              "description": "This project was made with React js framework.", 
+              "category": "react",
+              "link":"https://yalex95.github.io/portfolio/",
+              "github_link":"https://github.com/Yalex95/portfolio"
+          },
+          {   
+              "name": "Budget Controller",
+              "icon": "fa-brands fa-react", 
+              "description": "This project was made with React js framework.", 
+              "category": "react",
+              "link":"https://yalex95.github.io/budget/",
+              "github_link":"https://github.com/Yalex95/budget"
+          },
+          {   
+              "name": "Anime Rest API",
+              "icon": "fa-brands fa-react", 
+              "description": "This project was made with React js framework.", 
+              "category": "react",
+              "link":"https://yalex95.github.io/web-app/",
+              "github_link":"https://github.com/Yalex95/web-app"
+              }
+      ],
+  "contact": {
+          "title":"contact me!",
+          "text": "If you're looking for a front-end web developer who is equally comfortable with JavaScript wizardry, HTML artistry, CSS elegance, PHP magic, WordPress wizardry, and REST API mastery, then look no further. I'm excited to bring my passion, skills, and creativity to the table, creating experiences that resonate and leave a lasting impact. Feel free to reach out, and let's collaborate to turn your digital dreams into reality. Together, we can sculpt a digital world that's as functional as it is beautiful.",
+          "links": [
+              {
+                  "href": "tel:9632337458",
+                  "data": "963 233 74 58",
+                  "icon": "fa-solid fa-phone"
+              },{
+                  "href": "mailto:yerisaguilar@gmail.com",
+                  "data": "yerisaguilar@gmail.com",
+                  "icon": "fa-solid fa-envelope"
+              },{
+                  "href": "mailto:yerisaguilar@gmail.com",
+                  "data": "yerisaguilar95@gmail.com",
+                  "icon": "fa-solid fa-envelope"
+              }
+          ]
+      },
+  "footer": [
+      {    
+          "data":"https://github.com/Yalex95",
+          "icon": "fa-brands fa-github"
+      }
+  ]
+  
+}
