@@ -20,24 +20,39 @@
       </div>
       <div class="projects-filter">
         <button class="btn-purple-border active">All Projects</button>
-        <button class="btn-purple-border">React Js</button>
-        <button class="btn-purple-border">WordPress</button>
-        <button class="btn-purple-border">Vue Js</button>
+        <button
+          v-for="(category, index) in uniqueCats"
+          :key="index"
+          class="btn-purple-border capitalized"
+          @click="handleFilter(category)"
+        >
+          {{ category }}
+        </button>
       </div>
       <div class="projects-container">
         <div
-          v-for="(project, index) in projects"
+          v-for="(project, index) in filteredItems"
           :key="index"
-          class="project-container"
+          class="card-wrapper rounded-md flex justify-end items-center"
           style="background-image: url(/assets/project.png)"
         >
-          <div class="project-body">
+          <div
+            class="w-full static-card flex-col justify-center items-center text-center text-white font-bold"
+          >
             <img
-              class="img-fluid"
+              class="w-14 h-14 mb-5 mx-auto"
               :src="`/assets/${project.icon}`"
               :alt="project.category"
             />
-            <p class="name">{{ project.name }} {{ index }}</p>
+            <p class="name">{{ project.name }}</p>
+          </div>
+          <div class="card-content text-white w-full flex-col p-5">
+            <img
+              class="w-14 h-14 mb-5"
+              :src="`/assets/${project.icon}`"
+              :alt="project.category"
+            />
+            <p class="name">{{ project.name }}</p>
           </div>
         </div>
       </div>
@@ -46,6 +61,7 @@
   </section>
 </template>
 <script setup>
+import { onMounted } from "vue";
 const props = defineProps({
   projects: {
     default: () => [],
@@ -53,14 +69,33 @@ const props = defineProps({
   },
 });
 
-let selectedCategory = ref(0);
-console.log(props.projects);
-const uniqueCats = [...new Set(props.projects.map((obj) => obj.category))];
-console.log(uniqueCats);
+let selectedCategory = ref("all");
+let uniqueCats = ref([]);
+let filteredItems = ref([]);
+
+const filter = (cat) => {
+  if (cat === "all") {
+    filteredItems.value = props.projects;
+  } else {
+    filteredItems.value = props.projects.filter(
+      (item) => item.category === cat
+    );
+  }
+};
+const handleFilter = (cat) => {
+  selectedCategory.value = cat;
+};
+
+watch(selectedCategory, async (newCat, oldCat) => {
+  filter(newCat);
+});
+onMounted(() => {
+  uniqueCats.value = [...new Set(props.projects.map((obj) => obj.category))];
+  filter(selectedCategory.value);
+});
 </script>
 <style>
 #projects .container h4 {
-  /* color: #011b32; */
   font-family: Sansation;
   font-size: 18px;
   font-style: normal;
@@ -114,42 +149,80 @@ console.log(uniqueCats);
 }
 
 #projects .container .projects-container .project-container {
-  position: relative;
-  border-radius: 5px;
   padding: 36px 22px 37px;
 }
-#projects .container .projects-container .project-container::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 5px;
-  background-color: rgba(30, 7, 62, 0.7);
-}
-#projects
-  .container
-  .projects-container
-  .project-container
-  .project-body
-  .img-fluid {
-  width: 47px;
-  height: 42px;
-}
+
 #projects
   .container
   .projects-container
   .project-container
   .project-body
   .name {
-  color: #fff;
   font-family: "Inter";
   font-size: 18px;
   font-weight: 700;
 }
-#projects .container .projects-container .project-container .project-body {
+
+.card-wrapper {
   position: relative;
+  overflow: hidden;
+}
+.card-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  background-color: rgba(30, 7, 62, 0.6);
+}
+.static-card {
   z-index: 1;
+}
+.card-content {
+  background-color: rgba(30, 7, 62, 0.8);
+  position: absolute;
+  bottom: 0;
+  height: 0%;
+
+  margin-bottom: -134px;
+  transition: all 0.5s ease;
+  z-index: 1;
+}
+
+.card-wrapper:hover .card-content {
+  margin-bottom: 0px;
+  height: 100%;
+}
+.card-wrapper:hover .static-card {
+  visibility: hidden;
+}
+
+.card-content .e-con-inner {
+  transition: all 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.card-wrapper:not(:hover) .card-content .e-con-inner {
+  animation: fadeIn 1.5s ease forwards;
+}
+
+.card-wrapper:hover .card-content .e-con-inner {
+  justify-content: end;
+}
+
+@media (max-width: 1024px) {
+  .card-content {
+    height: 54%;
+  }
 }
 </style>

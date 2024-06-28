@@ -42,7 +42,7 @@ const getProfileData = async () => {
 // await getProfileData();
 
 // onMounted(async () => {
-await getProfileData();
+getProfileData();
 // });
 </script>
 
