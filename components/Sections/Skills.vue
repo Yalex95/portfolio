@@ -3,7 +3,6 @@
 </template>
 <script setup>
 let skills = await useFetchSkills();
-console.log(skills);
 
 </script>
 <style>

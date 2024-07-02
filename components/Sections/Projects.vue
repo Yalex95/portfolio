@@ -40,7 +40,7 @@
         <div
           v-for="(project, index) in filteredItems"
           :key="index"
-          class="card-wrapper rounded-md flex justify-end items-center"
+          class="card-wrapper rounded-md flex justify-end items-center bg-cover bg-no-repeat bg-center cursor-pointer"
           :style="`background-image: url(${project.featured_img})`"
         >
           <div
@@ -51,19 +51,35 @@
               :src="`/assets/${project.icon}`"
               :alt="project.category"
             />
-            <p class="name uppercase font-bold">{{ project.name }}</p>
+            <p class="name uppercase font-bold text-xl">{{ project.name }}</p>
           </div>
-          <div class="card-content text-white w-full flex-col p-5">
-            <img
-              class="w-14 h-14 mb-5"
-              :src="`/assets/${project.icon}`"
-              :alt="project.category"
-            />
-            <p class="description text-base mb-6 line-clamp-4">{{ project.description }}</p>
-            <a
-              class="rounded border-2 border-white py-2 px-4 capitalize font-bold"
-              >Go to site</a
-            >
+          <div class="card-content text-white w-full flex-col px-5 py-10 justify-between flex">
+            <div class="flex-col gap-5 flex">
+              <img
+                class="w-14 h-14 "
+                :src="`/assets/${project.icon}`"
+                :alt="project.category"
+              />
+              <p class="description text-sm mb-6 line-clamp-6">
+                {{ project.description }}
+              </p>
+            </div>
+            <div class="flex justify-between">
+              <a
+                v-show="project.github_link"
+                :href="project.github_link"
+                target="_blank"
+                class="bg-[#A077D9] rounded border-2 border-[#A077D9] py-2 px-4 capitalize font-bold flex gap-3 items-center"
+                ><img src="/assets/github_white.svg" alt="github" class="w-6 h-6"/>GitHub</a
+              >
+              <a
+                v-show="project.link"
+                :href="project.link"
+                target="_blank"
+                class="rounded border-2 border-white py-2 px-4 capitalize font-bold flex gap-2 items-center"
+                >Go to site<ArrowLongRightIcon class="w-10 h-8"/></a
+              >
+            </div>
           </div>
         </div>
       </div>
@@ -72,6 +88,8 @@
 </template>
 <script setup>
 import { useRoute, useRouter } from "vue-router";
+
+import { ArrowLongRightIcon } from "@heroicons/vue/24/outline";
 //TODO: add styling and real data
 const route = useRoute();
 const router = useRouter();
