@@ -1,13 +1,12 @@
 import projects from "@/data/projects.json";
 
 export default defineEventHandler((event) => {
-  const { cat } = event.context.params;
+  const { category } = getQuery(event);
   let filteredProjects = projects;
-  if (cat != "" || cat != "all") {
+  if (category != "" && category != "all") {
     filteredProjects = filteredProjects.filter((project) => {
-      return project.category.toLocaleLowerCase === cat.toLocaleLowerCase;
+      return project.category.toLowerCase() === category.toLowerCase();
     });
   }
-
   return filteredProjects;
 });

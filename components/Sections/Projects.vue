@@ -21,7 +21,7 @@
       <div class="projects-filter">
         <button
           class="btn-purple-border"
-          :class="[selectedCategory === 'all' ? 'active' : '']"
+          :class="[params.category === 'all' ? 'active' : '']"
           @click="onCatChange('all')"
         >
           All Projects
@@ -30,7 +30,7 @@
           v-for="(category, index) in uniqueCats"
           :key="index"
           class="btn-purple-border capitalize"
-          :class="[selectedCategory === category ? 'active' : '']"
+          :class="[params.category === category ? 'active' : '']"
           @click="onCatChange(category)"
         >
           {{ category }}
@@ -75,31 +75,34 @@ const route = useRoute();
 const router = useRouter();
 
 let uniqueCats = await useFetchCategories();
-let category = ref("all");
+let params = ref({category:'all'});
+/*
 const selectedCategory = computed(() => {
   const cat = route.query.category;
   if (!cat || cat === "") {
     return "all";
   }
   return cat;
-});
+});*/
 
 const { data: filteredItems, refresh } = await useFetchProjects(
-  route.query.category
+  // route.query.category
+  params.value
+  // 'all'
 );
 
 const onCatChange = (cat) => {
-  // category.value = cat;
+  params.value.category = cat;
   router.push({
     query: {
       category: cat,
     },
   });
 };
-watch(
-  () => route.query.category,
-  () => refresh()
-);
+// watch(
+//   () => route.query.category,
+//   () => refresh()
+// );
 
 </script>
 <style>

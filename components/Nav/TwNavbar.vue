@@ -128,7 +128,6 @@ onUnmounted(() => {
 });
 
 const handleCheckboxChange = (e) => {
-  console.log($cookies.get("locale"));
   isChecked.value = e.target.checked;
 
   if (isChecked.value) {

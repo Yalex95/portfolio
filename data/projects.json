@@ -1,7 +1,7 @@
 [
   {
     "name": "Franchoice",
-    "icon": "fa-brands fa-wordpress",
+    "icon": "wp.svg",
     "description": "is a project I contributed to, playing a pivotal role in its creation. This project was built using a combination of technologies and tools, including ACF (Advanced Custom Fields) for flexible content management, the WP API (WordPress API) for data retrieval and manipulation, WordPress as the core platform, PHP as the server-side scripting language, JavaScript for dynamic interactions, and the Bootstrap framework along with Bootscore WP Starter for responsive design and a solid foundation. The collaboration resulted in a dynamic and user-friendly web solution that showcases the power of synergy between different technologies.",
     "category": "wordpress",
     "link": "https://www.franchoice.com/",
@@ -9,7 +9,7 @@
   },
   {
     "name": "Groovy Hues",
-    "icon": "fa-brands fa-wordpress",
+    "icon": "wp.svg",
     "description": "is a project I contributed to, playing a pivotal role in its creation. This project was built using a combination of technologies and tools, including ACF (Advanced Custom Fields) for flexible content management, the WP API (WordPress API) for data retrieval and manipulation, WordPress as the core platform, PHP as the server-side scripting language, JavaScript for dynamic interactions, and the Bootstrap framework along with Bootscore WP Starter for responsive design and a solid foundation. The collaboration resulted in a dynamic and user-friendly web solution that showcases the power of synergy between different technologies.",
     "category": "wordpress",
     "link": "https://groovyhues.com/",
@@ -17,7 +17,7 @@
   },
   {
     "name": "Bumble Blinds",
-    "icon": "fa-brands fa-wordpress",
+    "icon": "wp.svg",
     "description": "is a project I contributed to, playing a pivotal role in its creation. This project was built using a combination of technologies and tools, including ACF (Advanced Custom Fields) for flexible content management, the WP API (WordPress API) for data retrieval and manipulation, WordPress as the core platform, PHP as the server-side scripting language, JavaScript for dynamic interactions, and the Bootstrap framework along with Bootscore WP Starter for responsive design and a solid foundation. The collaboration resulted in a dynamic and user-friendly web solution that showcases the power of synergy between different technologies.",
     "category": "wordpress",
     "link": "https://bumblebeeblinds.com/",
@@ -25,7 +25,7 @@
   },
   {
     "name": "TO-DO List",
-    "icon": "fa-brands fa-react",
+    "icon": "react-icon.svg",
     "description": "This project was made with Firebase real time data base and React js framework. *Adds TODO items to database *Delete TODO items to database *updates completed items",
     "category": "react",
     "link": "https://yalex95.github.io/TodoListCrud/",
@@ -33,7 +33,7 @@
   },
   {
     "name": "Portfolio",
-    "icon": "fa-brands fa-react",
+    "icon": "react-icon.svg",
     "description": "This project was made with React js framework.",
     "category": "react",
     "link": "https://yalex95.github.io/portfolio/",
@@ -41,7 +41,7 @@
   },
   {
     "name": "Budget Controller",
-    "icon": "fa-brands fa-react",
+    "icon": "react-icon.svg",
     "description": "This project was made with React js framework.",
     "category": "react",
     "link": "https://yalex95.github.io/budget/",
@@ -49,7 +49,7 @@
   },
   {
     "name": "Anime Rest API",
-    "icon": "fa-brands fa-react",
+    "icon": "react-icon.svg",
     "description": "This project was made with React js framework.",
     "category": "react",
     "link": "https://yalex95.github.io/web-app/",
