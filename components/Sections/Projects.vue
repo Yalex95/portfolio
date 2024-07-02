@@ -19,12 +19,19 @@
         </div>
       </div>
       <div class="projects-filter">
-        <button class="btn-purple-border active">All Projects</button>
+        <button
+          class="btn-purple-border"
+          :class="[selectedCategory === 'all' ? 'active' : '']"
+          @click="onCatChange('all')"
+        >
+          All Projects
+        </button>
         <button
           v-for="(category, index) in uniqueCats"
           :key="index"
-          class="btn-purple-border capitalized"
-          @click="handleFilter(category)"
+          class="btn-purple-border capitalize"
+          :class="[selectedCategory === category ? 'active' : '']"
+          @click="onCatChange(category)"
         >
           {{ category }}
         </button>
@@ -61,38 +68,39 @@
   </section>
 </template>
 <script setup>
-import { onMounted } from "vue";
-const props = defineProps({
-  projects: {
-    default: () => [],
-    type: Array,
-  },
-});
+// import { ref, computed, watch } from "vue";
+import { useRoute, useRouter } from "vue-router";
 
-let selectedCategory = ref("all");
-let uniqueCats = ref([]);
-let filteredItems = ref([]);
+const route = useRoute();
+const router = useRouter();
 
-const filter = (cat) => {
-  if (cat === "all") {
-    filteredItems.value = props.projects;
-  } else {
-    filteredItems.value = props.projects.filter(
-      (item) => item.category === cat
-    );
+let uniqueCats = await useFetchCategories();
+let category = ref("all");
+const selectedCategory = computed(() => {
+  const cat = route.query.category;
+  if (!cat || cat === "") {
+    return "all";
   }
-};
-const handleFilter = (cat) => {
-  selectedCategory.value = cat;
-};
+  return cat;
+});
 
-watch(selectedCategory, async (newCat, oldCat) => {
-  filter(newCat);
-});
-onMounted(() => {
-  uniqueCats.value = [...new Set(props.projects.map((obj) => obj.category))];
-  filter(selectedCategory.value);
-});
+const { data: filteredItems, refresh } = await useFetchProjects(
+  route.query.category
+);
+
+const onCatChange = (cat) => {
+  // category.value = cat;
+  router.push({
+    query: {
+      category: cat,
+    },
+  });
+};
+watch(
+  () => route.query.category,
+  () => refresh()
+);
+
 </script>
 <style>
 #projects .container h4 {
