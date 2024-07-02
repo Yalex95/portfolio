@@ -9,28 +9,30 @@
       delay: 3000,
     }"
   >
+    <!-- :modules="[SwiperAutoplay]" -->
     <SwiperSlide v-for="slide in sliderSkills" :key="slide">
       <div
-        class="text-center flex flex-col justify-center items-center text-white py-12 px-5 border-white border-2 rounded"
+        class="text-center flex flex-col justify-center items-center text-white py-10 px-5 border-white border-2 rounded min-h-80"
       >
         <img
-          :src="`/assets/${slide.icon}`"
-          class="w-30 h-30 text-xs"
+          :src="`/assets/icons/${slide.icon}`"
+          class="w-14 h-14"
           :alt="slide.skill"
         />
-        <p class="mt-3 text-lg font-bold">{{ slide.skill }}</p>
-        <p class="mt-3 text-sm  line-clamp-3 text-left">{{ slide.description }}</p>
+        <p class="mt-3 text-xl font-bold">{{ slide.skill }}</p>
+        <p class="mt-3 text-sm text-left">{{ slide.description }}</p>
       </div>
     </SwiperSlide>
   </Swiper>
 </template>
 <script setup>
+// import { ChatBubbleLeftRightIcon } from '@heroicons/vue/24/solid'
 const props = defineProps({
   sliderSkills: {
     type: [Array, []],
     // required: true
   },
-})
+});
 // const skills = [
 //   {
 //     icon: "js.svg",
