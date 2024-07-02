@@ -10,7 +10,7 @@
         <p class="mb-5">{{ $t("contactMeDesc") }}</p>
 
         <form id="contact-form">
-      <span v-if="message" class="error">{{ message }}</span>
+          <!-- <span v-if="message" class="error">{{ message }}</span> -->
           <input type="text" name="user_name" placeholder="Full Name *" />
           <div class="form-group">
             <input type="email" name="user_email" placeholder="E-mail *" />
@@ -29,6 +29,7 @@
     </div>
   </section>
 </template>
+<script setup></script>
 <style>
 #contact {
   padding: 100px 0 72px;
@@ -66,5 +67,4 @@
   grid-template-columns: repeat(auto-fill, minmax(24rem, 1fr));
   gap: 10px;
 }
-
 </style>

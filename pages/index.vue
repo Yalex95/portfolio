@@ -3,12 +3,10 @@
     <div>
       <SectionsHero />
       <SectionsAbout />
-      <SectionsSkills />
-      <ClientOnly fallback-tag="span" fallback="Loading comments...">
-        <SectionsProjects 
-      /></ClientOnly>
+      <SectionsSkills />      
+      <SectionsProjects />
 
-      <!-- <SectionsContact /> -->
+      <SectionsContact />
     </div>
   </NuxtLayout>
 </template>

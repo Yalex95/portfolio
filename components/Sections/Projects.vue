@@ -41,7 +41,7 @@
           v-for="(project, index) in filteredItems"
           :key="index"
           class="card-wrapper rounded-md flex justify-end items-center"
-          style="background-image: url(/assets/project.png)"
+          :style="`background-image: url(${project.featured_img})`"
         >
           <div
             class="w-full static-card flex-col justify-center items-center text-center text-white font-bold"
@@ -51,7 +51,7 @@
               :src="`/assets/${project.icon}`"
               :alt="project.category"
             />
-            <p class="name">{{ project.name }}</p>
+            <p class="name uppercase font-bold">{{ project.name }}</p>
           </div>
           <div class="card-content text-white w-full flex-col p-5">
             <img
@@ -59,37 +59,27 @@
               :src="`/assets/${project.icon}`"
               :alt="project.category"
             />
-            <p class="name">{{ project.name }}</p>
+            <p class="description text-base mb-6 line-clamp-4">{{ project.description }}</p>
+            <a
+              class="rounded border-2 border-white py-2 px-4 capitalize font-bold"
+              >Go to site</a
+            >
           </div>
         </div>
       </div>
-      <!-- <div class="counter">1/2</div> -->
     </div>
   </section>
 </template>
 <script setup>
-// import { ref, computed, watch } from "vue";
 import { useRoute, useRouter } from "vue-router";
-
+//TODO: add styling and real data
 const route = useRoute();
 const router = useRouter();
 
 let uniqueCats = await useFetchCategories();
-let params = ref({category:'all'});
-/*
-const selectedCategory = computed(() => {
-  const cat = route.query.category;
-  if (!cat || cat === "") {
-    return "all";
-  }
-  return cat;
-});*/
+let params = ref({ category: "all" });
 
-const { data: filteredItems, refresh } = await useFetchProjects(
-  // route.query.category
-  params.value
-  // 'all'
-);
+const { data: filteredItems, refresh } = await useFetchProjects(params.value);
 
 const onCatChange = (cat) => {
   params.value.category = cat;
@@ -99,11 +89,6 @@ const onCatChange = (cat) => {
     },
   });
 };
-// watch(
-//   () => route.query.category,
-//   () => refresh()
-// );
-
 </script>
 <style>
 #projects .container h4 {
