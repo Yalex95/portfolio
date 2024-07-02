@@ -1,6 +1,11 @@
 <template>
-  <div class="my-14 bg-[#1B023C] pt-32 pb-20 gradient"><SkillSlider /></div>
+  <div class="my-14 bg-[#1B023C] pt-32 pb-20 gradient"><SkillSlider :sliderSkills="skills"/></div>
 </template>
+<script setup>
+let skills = await useFetchSkills();
+console.log(skills);
+
+</script>
 <style>
 .gradient {
   position: relative;

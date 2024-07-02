@@ -1,0 +1,52 @@
+[
+  {
+    "icon": "communication.svg",
+    "skill": "Communication Skills",
+    "description": "Clearly articulating ideas and feedback, understanding and interpreting client requirements, collaborating with team members across different departments."
+  },
+  {
+    "icon": "teamwork.svg",
+    "skill": "Teamwork and Collaboration",
+    "description": "Working effectively in a team environment, being open to feedback and willing to provide constructive feedback to others, sharing knowledge and assisting team members when needed."
+  },
+  {
+    "icon": "problem_solving.svg",
+    "skill": "Problem-Solving Ability",
+    "description": "Thinking critically to identify issues and find effective solutions, approaching problems with a logical and analytical mindset, staying calm and composed under pressure."
+  },
+  {
+    "icon": "adaptability.svg",
+    "skill": "Adaptability and Flexibility",
+    "description": "Being open to new technologies, tools, and methodologies, adjusting to changing project requirements or client needs, managing multiple tasks and priorities effectively."
+  },
+  {
+    "icon": "time_management.svg",
+    "skill": "Time Management and Organization",
+    "description": "Prioritizing tasks and managing time efficiently, meeting deadlines without compromising quality, keeping track of project progress and updates."
+  },
+  {
+    "icon": "attention_to_detail.svg",
+    "skill": "Attention to Detail",
+    "description": "Ensuring precision and accuracy in coding and design, conducting thorough testing and debugging, maintaining high standards of quality and usability."
+  },
+  {
+    "icon": "creativity.svg",
+    "skill": "Creativity and Innovation",
+    "description": "Bringing fresh ideas and creative solutions to projects, enhancing user experience through innovative design and functionality, staying updated with the latest design trends and technologies."
+  },
+  {
+    "icon": "empathy.svg",
+    "skill": "Empathy and User-Centric Thinking",
+    "description": "Understanding and anticipating user needs and behaviors, designing and developing with the end-user in mind, creating intuitive and accessible interfaces."
+  },
+  {
+    "icon": "resilience.svg",
+    "skill": "Resilience and Perseverance",
+    "description": "Handling setbacks and criticism positively, continuing to push through challenges and obstacles, staying motivated and committed to continuous learning and improvement."
+  },
+  {
+    "icon": "conflict_resolution.svg",
+    "skill": "Conflict Resolution",
+    "description": "Addressing and resolving disagreements in a constructive manner, finding common ground and reaching compromises, maintaining a positive and collaborative team environment."
+  }
+]

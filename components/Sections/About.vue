@@ -9,7 +9,12 @@
         <p class="my-3">{{ $t("aboutMeText") }}</p>
 
         <div class="relative">
-          <a href="" class="btn-purple mt-3">{{ $t("downloadTextBtn") }}</a>
+          <a
+            href="/pdf/Yeris_Aguilar_Cv.pdf"
+            target="_blank"
+            class="btn-purple mt-3"
+            >{{ $t("downloadTextBtn") }}</a
+          >
         </div>
       </div>
       <div class="image-container flex justify-center relative">
@@ -53,7 +58,6 @@ const techStack = [
 ];
 </script>
 <style>
-
 #about::before,
 #about::after {
   content: "";
