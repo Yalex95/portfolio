@@ -7,7 +7,7 @@
     v-slot="{ open }"
   >
   <NavMobileNav/>
-    <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+    <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8" :class="[!scrolled && open?'bg-[#190039]':'']">
       <div class="relative flex h-16 items-center justify-between">
         <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
           <!-- Mobile menu button-->
@@ -68,7 +68,7 @@
     </div>
 
     <DisclosurePanel class="sm:hidden">
-      <div class="space-y-1 px-2 pb-3 pt-2">
+      <div class="space-y-1 px-2 pb-3 pt-2" :class="[!scrolled && open?'bg-[#190039]':'']">
         <DisclosureButton
           v-for="item in navigation"
           :key="item.name"
@@ -149,6 +149,7 @@ const handleCheckboxChange = (e) => {
   z-index: 3;
   width: 100%;
 }
+
 .scrolled {
   background-color: #190039;
   position: fixed;

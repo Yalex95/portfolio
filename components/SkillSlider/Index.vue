@@ -11,7 +11,7 @@
     :breakpoints="{
       '640': {
         slidesPerView: 1,
-        spaceBetween: 10,
+        spaceBetween: 30,
       },
       '768': {
         slidesPerView: 3,
@@ -25,7 +25,7 @@
   >
     <SwiperSlide v-for="slide in sliderSkills" :key="slide">
       <div
-        class="text-center flex flex-col justify-center items-center text-white py-10 px-5 border-white border-2 rounded min-h-80"
+        class="text-center flex flex-col justify-center items-center text-white py-10 px-5 mx-5 md:mx-0 border-white border-2 rounded min-h-80"
       >
         <img
           :src="`/assets/icons/${slide.icon}`"

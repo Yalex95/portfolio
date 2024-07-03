@@ -234,9 +234,14 @@ const onCatChange = (cat) => {
   justify-content: end;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1024px) and (min-width:600px) {
   .card-content {
     height: 54%;
   }
+}
+@media (max-width:600px){
+.card-content{
+  height: 35%;
+}
 }
 </style>
