@@ -1,4 +1,5 @@
 <template>
+  
   <Disclosure
     as="nav"
     :class="[{ scrolled: scrolled }, 'navbar']"

@@ -1,24 +1,8 @@
 <template>
   <div>
-    <div class="links flex">
+    <div class="links md:flex hidden">
       <div>
-        <!-- contact links -->
-        <ul class="flex flex-col gap-y-4">
-          <li
-            v-for="link in links"
-            :key="link.alt"
-            class="rounded-lg flex justify-center items-center w-10 h-10 hover:bg-[#1F0642]"
-          >
-            <a
-              :href="link.url"
-              class="bg-contain bg-center w-6 h-6 bg-no-repeat"
-              :style="{
-                'background-image': `url(${link.icon})`,
-              }"
-            >
-            </a>
-          </li>
-        </ul>
+        <Links :links="links" wrapperClass="flex flex-col gap-y-4"/>
       </div>
     </div>
   </div>
