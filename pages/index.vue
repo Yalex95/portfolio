@@ -3,10 +3,10 @@
     <div>
       <SectionsHero />
       <SectionsAbout />
-      <SectionsSkills />      
+      <SectionsSkills />
       <SectionsProjects />
 
-      <!-- <SectionsContact /> -->
+      <SectionsContact />
     </div>
   </NuxtLayout>
 </template>
@@ -20,4 +20,3 @@ useHead({
   meta: [{ name: "description", content: "My amazing site." }],
 });
 </script>
-

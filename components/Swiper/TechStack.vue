@@ -8,6 +8,20 @@
     :autoplay="{
       delay: 3000,
     }"
+    :breakpoints="{
+      '640': {
+        slidesPerView: 3,
+        spaceBetween: 10,
+      },
+      '768': {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+      '1024': {
+        slidesPerView: 5,
+        spaceBetween: 30,
+      },
+    }"
     
   >
     <SwiperSlide v-for="slide in techStack" :key="slide">
@@ -76,8 +90,16 @@ const techStack = [
   font-weight: bold;
   font-family: "Roboto", sans-serif;
 }
+
+#techStack .swiper-wrapper {
+  min-width: 100vh;
+  width: 200vh;
+}
+@media (max-width: 600px) {
+  
 #techStack .swiper-wrapper {
   min-width: 40vh;
-  width: 48vh;
+  width: 46vh;
+}
 }
 </style>

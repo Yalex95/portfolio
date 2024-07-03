@@ -1,6 +1,5 @@
 <template>
   <div>
-    <NavMobileNav/>
     <NavTwNavbar />
     <slot />
     <Footer />

@@ -3,7 +3,7 @@
     class="flex flex-col justify-center items-center relative"
     id="about"
   >
-    <div class="container" id="about-me">
+    <div class="container pt-6" id="about-me">
       <div class="about-desc">
         <h4 class="uppercase">Yeris Aguilar</h4>
         <p class="my-3">{{ $t("aboutMeText") }}</p>
@@ -78,6 +78,9 @@ const techStack = [
   top: -6%;
 
   background-size: cover;
+}
+@media (max-width: 600px) {
+  
 }
 
 #about h4 {

@@ -1,13 +1,13 @@
 <template>
-  <section class="flex justify-center" id="contact">
-    <div class="w-10/12 flex">
-      <div class="w-3/5">
-        <p class="uppercase title mb-2">{{ $t("contactText") }}</p>
-        <h5 class="uppercase mb-4">
+  <section class="flex justify-center py-28 md:px-16 px-0" id="contact">
+    <div class="w-10/12 flex justify-center md:justify-left">
+      <div class="md:w-3/5">
+        <p class="uppercase text-base text-[#a15aff] mb-2 title">{{ $t("contactText") }}</p>
+        <h5 class="uppercase mb-4 text-[#1b023c]">
           {{ $t("contactMeSub") }}<br />
           {{ $t("contactMeSubtitle") }}
         </h5>
-        <p class="mb-5">{{ $t("contactMeDesc") }}</p>
+        <p class="mb-5 text-[#011b32]">{{ $t("contactMeDesc") }}</p>
 
         <form id="contact-form">
           <!-- <span v-if="message" class="error">{{ message }}</span> -->
@@ -31,25 +31,25 @@
 </template>
 <script setup></script>
 <style>
-#contact {
+/*#contact {
   padding: 100px 0 72px;
-}
+}*/
 #contact p.title {
-  color: #a15aff;
+  /* color: #a15aff; */
   font-family: "Sansation";
-  font-size: 16px;
+  /* font-size: 16px; */
   font-weight: 700;
 }
 #contact h5 {
-  color: #1b023c;
+  /* color: #1b023c; */
   font-family: "Inter";
   font-size: 18px;
   font-weight: 700;
   /* margin: 0; */
 }
-#contact p {
+/* #contact p {
   color: #011b32;
-}
+} */
 #contact #contact-form {
   display: grid;
   grid-template-columns: 1fr;
