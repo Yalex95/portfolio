@@ -28,9 +28,9 @@
       </div>
     </div>
     <!-- skills -->
-    <div id="skills" class="flex justify-between w-full px-40 py-10">
-      <!-- <Slider /> -->
-    </div>
+    <!-- <div id="skills" class="flex justify-between lg:w-full  lg:px-40 lg:py-10 px-0 py-5"> -->
+    <div id="techStack"><SwiperTechStack /></div>
+    <!-- </div> -->
   </section>
 </template>
 <script setup>

@@ -53,7 +53,6 @@
   background-image: url(/assets/Hero-Pattern.svg);
   background-repeat: no-repeat;
   background-size: cover;
-  /* background-position: bottom; */
   width: 100%;
   height: 400px;
   bottom: 0;

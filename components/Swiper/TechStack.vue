@@ -1,15 +1,17 @@
 <template>
   <Swiper
     :modules="[SwiperAutoplay]"
-    :slides-per-view="5"
+    :slides-per-view="3"
     :loop="true"
+    :space-between="10"
     :effect="'creative'"
     :autoplay="{
-      delay: 8000,
+      delay: 3000,
     }"
+    
   >
     <SwiperSlide v-for="slide in techStack" :key="slide">
-      <div class="text-center">
+      <div  class="text-center flex flex-col justify-center items-center text-white py-10 px-5 ">
         <img
           :src="`/assets/${slide.asset}`"
           class="w-30 h-30"
@@ -31,7 +33,7 @@ const techStack = [
     tech: "JavaScript",
   },
   {
-    asset: "vue.svg",
+    asset: "vue_grey.svg",
     tech: "Vue JS",
   },
   {
@@ -64,27 +66,18 @@ const techStack = [
   },
 ];
 </script>
-<style>
+<style >
 .swiper-slide {
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 18px;
-  /* height: 20vh; */
   font-size: 4rem;
   font-weight: bold;
   font-family: "Roboto", sans-serif;
 }
-.swiper-wrapper {
-  min-width: 100vh;
-  width: 300vh;
+#techStack .swiper-wrapper {
+  min-width: 40vh;
+  width: 48vh;
 }
-/* .swiper-cards {
-  width: 540px;
-  height: 540px;
-} */
-/* .swiper-cards .swiper-slide {
-  border-radius: 6px;
-  border: 1px solid black;
-} */
 </style>

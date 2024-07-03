@@ -6,7 +6,7 @@
       <SectionsSkills />      
       <SectionsProjects />
 
-      <SectionsContact />
+      <!-- <SectionsContact /> -->
     </div>
   </NuxtLayout>
 </template>
@@ -21,4 +21,3 @@ useHead({
 });
 </script>
 
-<style></style>
