@@ -29,7 +29,10 @@
     </div>
   </section>
 </template>
-<script setup></script>
+<script setup>
+
+// TODO: integrate mail third party
+</script>
 <style>
 #contact p.title {
   font-family: "Sansation";

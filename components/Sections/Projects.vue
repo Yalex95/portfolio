@@ -98,9 +98,8 @@
 </template>
 <script setup>
 import { useRoute, useRouter } from "vue-router";
-
 import { ArrowLongRightIcon } from "@heroicons/vue/24/outline";
-//TODO: add styling and real data
+
 const route = useRoute();
 const router = useRouter();
 
@@ -249,7 +248,7 @@ const onCatChange = (cat) => {
   justify-content: end;
 }
 
-@media (max-width: 1024px) and (min-width: 600px) {
+@media (max-width: 1024px) and (min-width: 990px) {
   .card-content {
     height: 54%;
   }

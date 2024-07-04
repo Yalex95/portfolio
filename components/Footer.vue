@@ -1,13 +1,13 @@
 <template>
   <div>
     <footer class="footer">
-      <div class="container flex">
-        <div class="w-1/3">
+      <div class="container flex-col md:flex-row flex">
+        <div class="w-full lg:w-1/3">
           <p class="uppercase">Front End web Developer</p>
           <p class="text-2xl capitalize">Yeris Alejandra Aguilar</p>
           <p><i class="location"></i>Tijuana, MX</p>
 
-          <ul class="social mt-3">
+          <ul class="social mt-3 hidden md:inline-flex">
             <li v-for="link in links" :key="link.alt">
               <a :href="link.url" class="linkedin">
                 <img :src="link.icon" :alt="link.alt"
@@ -15,14 +15,23 @@
             </li>
           </ul>
         </div>
-        <div class="flex-col justify-center items-center hidden md:flex w-1/3">
+        <div class="flex-col justify-center md:items-center flex md:flex-row md:w-1/3">
           <ul class="quick-links">
             <li v-for="nav in navigation" :key="nav.name">
-              <a :href="nav.href">{{ nav.name }}</a>
+              <a class="decoration-solid underline" :href="nav.href">{{ nav.name }}</a>
             </li>
           </ul>
+
         </div>
-        <div class="hidden md:block w-1/3 lg:flex flex-col items-center">
+        <div class="inline-flex md:hidden">
+          <ul class="social mt-3 inline-flex">
+            <li v-for="link in links" :key="link.alt">
+              <a :href="link.url" class="linkedin">
+                <img :src="link.icon" :alt="link.alt"
+              /></a>
+            </li>
+          </ul></div>
+        <div class="hidden md:block md:w-1/3 lg:flex flex-col items-center">
           <p class="text-2xl font-semibold">Get Started TODAY!</p>
           <a href="" class="btn-white mt-2 text-center"> contact me</a>
         </div>
@@ -46,3 +55,30 @@ const links = [
   { url: "", icon: "/assets/github.svg", alt: "Github icon" },
 ];
 </script>
+<style>
+
+
+/* Footer */
+.footer {
+  color: #fff;
+  padding: 50px 0;
+  background: #1b023c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(21rem, 1fr));
+}
+.footer ul.social {
+  /* display: inline-flex; */
+  list-style: none;
+  padding: 0;
+  gap: 1rem;
+}
+
+.footer .btn-white {
+  width: fit-content;
+}
+</style>

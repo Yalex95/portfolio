@@ -23,6 +23,9 @@
     </div>
   </section>
 </template>
+<script setup>
+// TODO: add animation to hero
+</script>
 <style>
 #hero {
   height: 600px;
