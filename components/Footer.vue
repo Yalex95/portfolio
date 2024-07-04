@@ -2,7 +2,7 @@
   <div>
     <footer class="footer">
       <div class="container flex-col md:flex-row flex">
-        <div class="w-full lg:w-1/3">
+        <div class="w-full md:w-1/3">
           <p class="uppercase">Front End web Developer</p>
           <p class="text-2xl capitalize">Yeris Alejandra Aguilar</p>
           <p><i class="location"></i>Tijuana, MX</p>

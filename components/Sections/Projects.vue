@@ -116,6 +116,7 @@ const onCatChange = (cat) => {
     },
   });
 };
+// TODO: add slider settings to cards
 </script>
 <style>
 #projects .container h4 {
