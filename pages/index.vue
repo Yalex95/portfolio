@@ -6,7 +6,7 @@
       <SectionsSkills />
       <SectionsProjects />
 
-      <SectionsContact />
+      <!-- <SectionsContact /> -->
     </div>
   </NuxtLayout>
 </template>
