@@ -79,9 +79,6 @@ const techStack = [
 
   background-size: cover;
 }
-@media (max-width: 600px) {
-  
-}
 
 #about h4 {
   color: #1b023c;
@@ -120,5 +117,36 @@ const techStack = [
   border-radius: 5px;
   background: #a15aff;
   z-index: 0;
+}
+/* mobile */
+@media (max-width: 600px){
+  #about::before{
+    top:-9%
+  }
+  #about::after{
+    top:-7%
+  }
+}
+@media (max-width: 900px) and (min-width: 600px) {
+  #about::before{
+    height: 120px;
+    top:-15%
+  }
+  #about::after{
+    height: 100px;
+    top:-11%
+  }
+
+  
+}
+@media (min-width:990px){
+  #about::before{
+    height:250px;
+    top:-31%;
+  }
+  #about::after{
+    height: 180px;
+    top:-21%;
+  }
 }
 </style>

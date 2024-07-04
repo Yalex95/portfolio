@@ -67,6 +67,7 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
+
 #hero .click-here::after {
   content: "Click here";
   background-image: url(/assets/white_arrow.svg);
@@ -92,5 +93,37 @@
 }
 #hero .btn {
   display: inline-flex;
+}
+
+/* mobile */
+@media (max-width: 600px){
+  #hero::after{
+    height: 100px;
+  }
+}
+/* ipad */
+@media (max-width: 900px) and (min-width: 600px) {
+  #hero::after{
+    height: 150px;
+  }
+  
+}
+@media(min-width: 990px) {
+  #hero::after{
+    height:250px;
+    background-size: cover;
+  bottom: 5%;
+  }
+  #hero::before{
+    background-image: url(/assets/Hero-Pattern-desktop.svg);
+    height: 600px;
+    background-size: cover;
+  }
+  #hero{
+    min-height: 600px;
+    height: 800px;
+    padding-bottom: 3rem;
+  }
+  
 }
 </style>
