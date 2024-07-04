@@ -102,4 +102,16 @@ const techStack = [
   width: 46vh;
 }
 }
+@media (max-width: 990px) and (min-width: 600px) {
+  #techStack .swiper-wrapper {
+  min-width: 40vh;
+  width: 50vh;
+}
+}
+@media (min-width:990px) {
+  #techStack .swiper-wrapper {
+  min-width: 100vh;
+  width: 150vh;
+}
+}
 </style>

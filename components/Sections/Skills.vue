@@ -1,11 +1,15 @@
 <template>
-  <div id="skillSlider" class="md:my-14 bg-[#1B023C] md:pt-32 md:pb-20 py-20 gradient"><SkillSlider :sliderSkills="skills"/></div>
+  <div
+    id="skillSlider"
+    class=":my-14 bg-[#1B023C] lg:pt-32 md:pb-20 py-20 gradient lg:px-0 md:px-4"
+  >
+    <SkillSlider :sliderSkills="skills" />
+  </div>
 </template>
 <script setup>
 let skills = await useFetchSkills();
-
 </script>
-<style >
+<style>
 .gradient {
   position: relative;
 }

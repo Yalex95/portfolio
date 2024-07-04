@@ -14,7 +14,7 @@
         spaceBetween: 30,
       },
       '768': {
-        slidesPerView: 3,
+        slidesPerView: 2,
         spaceBetween: 20,
       },
       '1024': {
@@ -65,5 +65,8 @@ const props = defineProps({
   min-width: 50vh;
   width: 50vh;
 }
+}
+@media (max-width: 990px) and (min-width: 600px) {
+  
 }
 </style>
