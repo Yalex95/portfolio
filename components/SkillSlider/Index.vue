@@ -1,5 +1,6 @@
 <template>
   <Swiper
+  
     :modules="[SwiperAutoplay]"
     :slides-per-view="1"
     :loop="true"
@@ -25,7 +26,7 @@
   >
     <SwiperSlide v-for="slide in sliderSkills" :key="slide">
       <div
-        class="text-center flex flex-col justify-center items-center text-white py-10 px-5 mx-5 md:mx-0 border-white border-2 rounded min-h-80"
+        class="text-left flex flex-col justify-center md:items-center text-white py-5 md:py-10 px-5 mx-10 md:mx-0 border-white border-2 rounded md:min-h-80 min-h-72"
       >
         <img
           :src="`/assets/icons/${slide.icon}`"

@@ -1,12 +1,12 @@
 <template>
   <section class="flex justify-center items-center pt-20" id="projects">
     <div class="container">
-      <h4 class="uppercase text-[#011b32]">{{ $t("showcase") }}</h4>
+      <h4 class="uppercase text-[#011b32] mb-8">{{ $t("showcase") }}</h4>
       <div class="recent-project">
         <div class="recent-project-desc">
           <h5 class="uppercase text-[#a15aff]">{{ $t("recentProject") }}</h5>
           <h4 class="uppercase">{{ $t("projectName") }}</h4>
-          <p>
+          <p class="mb-4">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum dolore
             non possimus laboriosam animi saepe voluptatem nobis quia,
             necessitatibus id deleniti doloribus quas expedita reiciendis
@@ -53,14 +53,20 @@
             />
             <p class="name uppercase font-bold text-xl">{{ project.name }}</p>
           </div>
-          <div class="card-content text-white w-full flex-col px-5 py-10 justify-between flex">
+          <!-- card hover -->
+          <div
+            class="card-content text-white w-full flex-col px-5 py-10 md:justify-between flex"
+          >
             <div class="flex-col gap-5 flex">
               <img
-                class="w-14 h-14 "
+                class="w-14 h-14"
                 :src="`/assets/${project.icon}`"
                 :alt="project.category"
               />
-              <p class="description text-sm mb-6 line-clamp-6">
+              <p class="name uppercase font-bold text-xl block md:hidden mb-4">
+                {{ project.name }}
+              </p>
+              <p class="description text-sm mb-6 line-clamp-6 hidden md:block">
                 {{ project.description }}
               </p>
             </div>
@@ -70,15 +76,19 @@
                 :href="project.github_link"
                 target="_blank"
                 class="bg-[#A077D9] rounded border-2 border-[#A077D9] py-2 px-4 capitalize font-bold flex gap-3 items-center"
-                ><img src="/assets/github_white.svg" alt="github" class="w-6 h-6"/>GitHub</a
+                ><img
+                  src="/assets/github_white.svg"
+                  alt="github"
+                  class="w-6 h-6"
+                />GitHub</a
               >
               <a
                 v-show="project.link"
                 :href="project.link"
                 target="_blank"
                 class="rounded border-2 border-white py-2 px-4 capitalize font-bold flex gap-2 items-center"
-                >Go to site<ArrowLongRightIcon class="w-10 h-8"/></a
-              >
+                >Go to site<ArrowLongRightIcon class="w-10 h-8"
+              /></a>
             </div>
           </div>
         </div>
@@ -161,6 +171,11 @@ const onCatChange = (cat) => {
   grid-auto-rows: 20rem;
   gap: 3rem;
 }
+@media (max-width: 600px) {
+  #projects .container .projects-container {
+    grid-auto-rows: 16rem;
+  }
+}
 
 #projects .container .projects-container .project-container {
   padding: 36px 22px 37px;
@@ -234,14 +249,14 @@ const onCatChange = (cat) => {
   justify-content: end;
 }
 
-@media (max-width: 1024px) and (min-width:600px) {
+@media (max-width: 1024px) and (min-width: 600px) {
   .card-content {
     height: 54%;
   }
 }
-@media (max-width:600px){
-.card-content{
-  height: 35%;
-}
+@media (max-width: 600px) {
+  .card-content {
+    height: 35%;
+  }
 }
 </style>

@@ -5,7 +5,7 @@
   >
     <div class="container pt-6" id="about-me">
       <div class="about-desc">
-        <h4 class="uppercase">Yeris Aguilar</h4>
+        <h4 class="uppercase">Yeris Alejandra Aguilar</h4>
         <p class="my-3">{{ $t("aboutMeText") }}</p>
 
         <div class="relative">
@@ -90,7 +90,7 @@ const techStack = [
   text-transform: uppercase;
   margin-bottom: 0;
 }
-#about p:not(#about #skills p) {
+#about p:not(#about #techStack p) {
   color: #011b32;
   font-family: "Inter";
   font-size: 14px;

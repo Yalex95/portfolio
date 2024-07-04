@@ -3,7 +3,7 @@
     class="flex flex-col w-full text-white justify-center items-center relative"
     id="hero"
   >
-    <div class="xl:w-4/12 text-center">
+    <div class="w-10/12 md:w-6/12 xl:w-4/12 md:text-center">
       <h6 class="uppercase"><span>Yeris Aguilar -</span> front end</h6>
       <h1 class="uppercase mb-3">
         Web <br class="display" />
@@ -13,7 +13,7 @@
         {{ $t("heroDescription") }}
       </p>
       <div
-        class="btn-container mt-5 relative flex-row flex justify-center gap-2"
+        class="btn-container mt-5 relative flex-row flex md:justify-center gap-2"
       >
         <a href="/#contact" class="btn cursor-pointer z-10">{{
           $t("contactText")

@@ -31,7 +31,7 @@
           class="w-30 h-30"
           :alt="slide.tech"
         />
-        <p class="mt-3 text-[#adaeaf]">{{ slide.tech }}</p>
+        <p class="mt-3 text-[#adaeaf] font-semiBold">{{ slide.tech }}</p>
       </div>
     </SwiperSlide>
   </Swiper>
