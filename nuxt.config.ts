@@ -21,7 +21,7 @@ export default defineNuxtConfig({
       /^\/404/   // Exclude routes like /200 from being generated if it's not a real page
     ]  },
     build: {
-      transpile: ['swiper']
+      transpile: ['nuxt-swiper']
     },
   // Public runtime configuration
   publicRuntimeConfig: {
