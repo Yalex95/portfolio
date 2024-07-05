@@ -1,38 +1,52 @@
-# https://github.com/actions/deploy-pages#usage
-name: Deploy to GitHub Pages
-on:
-  workflow_dispatch:
+name: Build and Deploy
+
+on: 
   push:
     branches:
       - vue-migration
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - run: corepack enable
-      - uses: actions/setup-node@v3
-        with:
-          node-version: "20"
-      # Pick your own package manager and build script
 
-      - name: Build Nuxt app
-        run: npm run generate
-  # Deployment job
-  deploy:
-    # Add a dependency to the build job
-    needs: build
-    # Grant GITHUB_TOKEN the permissions required to make a Pages deployment
-    permissions:
-      pages: write      # to deploy to Pages
-      id-token: write   # to verify the deployment originates from an appropriate source
-    # Deploy to the github_pages environment
-    environment:
-      name: github_pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    # Specify runner + deployment step
+permissions:
+  contents: write
+
+jobs:
+  build-and-deploy:
+    concurrency: ci-${{ github.ref }}
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [20]
     steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v1
+    - name: Checkout 🛎️
+      uses: actions/checkout@v3
+
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ matrix.node-version }}
+
+    - name: Cache Node Modules 🗃️
+      uses: actions/cache@v3
+      with:
+        path: ~/.npm
+        key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+        restore-keys: |
+          ${{ runner.os }}-node-
+
+    - name: Install Dependencies 🔧
+      run: npm ci
+
+    - name: Build Application 🏗️
+      run: npm run build
+      env:
+        NUXT_APP_BASE_URL: ${{ vars.NUXT_APP_BASE_URL }}
+
+    - name: Generate Static Files 📄
+      run: npm run generate
+      env:
+        NUXT_APP_BASE_URL: ${{ vars.NUXT_APP_BASE_URL }}
+
+    - name: Deploy 🚀
+      uses: JamesIves/github-pages-deploy-action@v4
+      with:
+        folder: dist
+        clean: true  # Ensures old files are removed before deploying the new ones
