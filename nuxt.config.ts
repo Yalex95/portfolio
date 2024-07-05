@@ -4,7 +4,7 @@ export default defineNuxtConfig({
   modules: ["@nuxtjs/tailwindcss", "nuxt-swiper"],
   css: ["~/assets/css/style.css"],
   // plugins: ["~/plugins/scroll.ts"],
-
+target:'static',
   router: {
     base: "/<portfolio>/",
   },

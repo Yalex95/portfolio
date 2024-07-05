@@ -8,7 +8,7 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "deploy": "gh-pages -d dist",
+    "deploy": "nuxt generate && gh-pages -d dist",
     "deploy:gh": "npm run generate && npm run deploy"
   },
   "devDependencies": {
