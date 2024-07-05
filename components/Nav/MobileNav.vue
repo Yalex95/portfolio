@@ -2,7 +2,7 @@
   <div class="flex md:hidden justify-between items-center py-2  px-4 bg-[#A15AFF]">
     <div class="block">
       <label class="inline-flex items-center cursor-pointer">
-        <img src="./assets/icons/language.png" alt="world icon" class="mr-3" />
+        <img src="/assets/icons/language.png" alt="world icon" class="mr-3" />
         <input
           type="checkbox"
           v-model="isChecked"
