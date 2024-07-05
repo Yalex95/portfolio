@@ -1,4 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+// In nuxt.config.js or in a component
+import 'swiper/swiper-bundle.css';
+
 export default defineNuxtConfig({
   // plugins: ["~/plugins/scroll.ts"],
   target: "static",
