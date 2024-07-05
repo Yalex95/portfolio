@@ -13,7 +13,10 @@ export default defineNuxtConfig({
   css: ["~/assets/css/style.css"],
   generate: {
     fallback: true,
-  },
+    exclude: [
+      /^\/200/,
+      /^\/404/   // Exclude routes like /200 from being generated if it's not a real page
+    ]  },
   // Public runtime configuration
   publicRuntimeConfig: {
     baseURL: process.env.NUXT_APP_BASE_URL || "http://localhost:3000",
