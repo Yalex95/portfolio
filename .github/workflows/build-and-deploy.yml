@@ -16,15 +16,24 @@ jobs:
     - name: Checkout 🛎️
       uses: actions/checkout@v3
 
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v3
+    - name: Cache Node Modules 🗃️
+      uses: actions/cache@v3
       with:
-        node-version: ${{ matrix.node-version }}
+        path: ~/.npm
+        key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+        restore-keys: |
+          ${{ runner.os }}-node-
 
-    - name: Install & Generate 🔧
-      run: |
-        npm ci
-        npm run generate
+    - name: Install Dependencies 🔧
+      run: npm ci
+
+    - name: Build Application 🏗️
+      run: npm run build
+      env:
+        NUXT_APP_BASE_URL: ${{ vars.NUXT_APP_BASE_URL  }}
+
+    - name: Generate 🔧
+      run: npm run generate
       env:
         NUXT_APP_BASE_URL: ${{ vars.NUXT_APP_BASE_URL  }}
 
