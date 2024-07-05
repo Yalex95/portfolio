@@ -12,4 +12,8 @@ target:'static',
   generate: {
     fallback: true,
   },
+  // Public runtime configuration
+  publicRuntimeConfig: {
+    baseURL: process.env.NUXT_APP_BASE_URL || 'http://localhost:3000'
+  }
 });
