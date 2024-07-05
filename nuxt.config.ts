@@ -1,6 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 // In nuxt.config.js or in a component
-import 'swiper/swiper-bundle.css';
+// import 'swiper/swiper-bundle.css';
 
 export default defineNuxtConfig({
   // plugins: ["~/plugins/scroll.ts"],
@@ -20,6 +20,9 @@ export default defineNuxtConfig({
       /^\/200/,
       /^\/404/   // Exclude routes like /200 from being generated if it's not a real page
     ]  },
+    build: {
+      transpile: ['swiper']
+    },
   // Public runtime configuration
   publicRuntimeConfig: {
     baseURL: process.env.NUXT_APP_BASE_URL || "http://localhost:3000",
