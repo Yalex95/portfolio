@@ -3,9 +3,10 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "nuxt build",
     "dev": "nuxt dev",
+    "build": "nuxt build",
     "generate": "nuxt generate",
+    "start": "nuxt start",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "deploy": "nuxt generate && gh-pages -d dist",
