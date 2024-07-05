@@ -11,22 +11,22 @@
 const links = [
   {
     url: "https://www.linkedin.com/in/yeris-aguilar/",
-    icon: "/assets/linkedin_nav.svg",
+    icon: "./assets/linkedin_nav.svg",
     alt: "LinkedIn icon",
   },
   {
     url: "mailto:yerisaguilar95@gmail.com",
-    icon: "/assets/email_nav.svg",
+    icon: "./assets/email_nav.svg",
     alt: "Email icon",
   },
   {
     url: "tel:+529632337458",
-    icon: "/assets/phone_nav.svg",
+    icon: "./assets/phone_nav.svg",
     alt: "Phone icon",
   },
   {
     url: "https://github.com/Yalex95",
-    icon: "/assets/github_nav.svg",
+    icon: "./assets/github_nav.svg",
     alt: "Github icon",
   },
 ];

@@ -7,7 +7,7 @@
     "category": "react",
     "link": "https://yalex95.github.io/TodoListCrud/",
     "github_link": "",
-    "featured_img":"/assets/project.png"
+    "featured_img":"./assets/project.png"
   },
   {
     "name": "Portfolio",
@@ -16,7 +16,7 @@
     "category": "vue",
     "link": "https://yalex95.github.io/portfolio/",
     "github_link": "https://github.com/Yalex95/portfolio",
-    "featured_img":"/assets/portafolio-featured-img.jpg"
+    "featured_img":"./assets/portafolio-featured-img.jpg"
   },
   {
     "name": "Budget Controller",
@@ -25,7 +25,7 @@
     "category": "react",
     "link": "https://yalex95.github.io/budget/",
     "github_link": "https://github.com/Yalex95/budget",
-    "featured_img":"/assets/project.png"
+    "featured_img":"./assets/project.png"
   },
   {
     "name": "Anime Rest API",
@@ -34,6 +34,6 @@
     "category": "react",
     "link": "https://yalex95.github.io/web-app/",
     "github_link": "https://github.com/Yalex95/web-app",
-    "featured_img":"/assets/project.png"
+    "featured_img":"./assets/project.png"
   }
 ]

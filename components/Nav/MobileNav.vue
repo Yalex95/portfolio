@@ -2,7 +2,7 @@
   <div class="flex md:hidden justify-between items-center py-2  px-4 bg-[#A15AFF]">
     <div class="block">
       <label class="inline-flex items-center cursor-pointer">
-        <img src="/assets/icons/language.png" alt="world icon" class="mr-3" />
+        <img src="./assets/icons/language.png" alt="world icon" class="mr-3" />
         <input
           type="checkbox"
           v-model="isChecked"
@@ -35,22 +35,22 @@ let translate = useI18n();
 const links = [
   {
     url: "https://www.linkedin.com/in/yeris-aguilar/",
-    icon: "/assets/linkedin_white.svg",
+    icon: "./assets/linkedin_white.svg",
     alt: "LinkedIn icon",
   },
   {
     url: "mailto:yerisaguilar95@gmail.com",
-    icon: "/assets/email_white.svg",
+    icon: "./assets/email_white.svg",
     alt: "Email icon",
   },
   {
     url: "tel:+529632337458",
-    icon: "/assets/phone_white.svg",
+    icon: "./assets/phone_white.svg",
     alt: "Phone icon",
   },
   {
     url: "https://github.com/Yalex95",
-    icon: "/assets/github_white.svg",
+    icon: "./assets/github_white.svg",
     alt: "Github icon",
   },
 ];

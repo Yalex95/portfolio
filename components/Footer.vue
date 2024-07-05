@@ -49,10 +49,10 @@ const navigation = [
 ];
 
 const links = [
-  { url: "", icon: "/assets/linkedIn.svg", alt: "LinkedIn icon" },
-  { url: "", icon: "/assets/email.svg", alt: "Email icon" },
-  { url: "", icon: "/assets/phone.svg", alt: "Phone icon" },
-  { url: "", icon: "/assets/github.svg", alt: "Github icon" },
+  { url: "", icon: "./assets/linkedIn.svg", alt: "LinkedIn icon" },
+  { url: "", icon: "./assets/email.svg", alt: "Email icon" },
+  { url: "", icon: "./assets/phone.svg", alt: "Phone icon" },
+  { url: "", icon: "./assets/github.svg", alt: "Github icon" },
 ];
 </script>
 <style>
