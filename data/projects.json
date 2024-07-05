@@ -2,7 +2,7 @@
   
   {
     "name": "TO-DO List",
-    "icon": "react-icon.svg",
+    "icon": "./assets/react-icon.svg",
     "description": "This project was made with Firebase real time data base and React js framework. *Adds TODO items to database *Delete TODO items to database *updates completed items",
     "category": "react",
     "link": "https://yalex95.github.io/TodoListCrud/",
@@ -11,7 +11,7 @@
   },
   {
     "name": "Portfolio",
-    "icon": "vue.svg",
+    "icon": "./assets/vue.svg",
     "description": "This project was made with Nuxt 3 js framework.",
     "category": "vue",
     "link": "https://yalex95.github.io/portfolio/",
@@ -20,7 +20,7 @@
   },
   {
     "name": "Budget Controller",
-    "icon": "react-icon.svg",
+    "icon": "./assets/react-icon.svg",
     "description": "This project was made with React js framework.",
     "category": "react",
     "link": "https://yalex95.github.io/budget/",
@@ -29,7 +29,7 @@
   },
   {
     "name": "Anime Rest API",
-    "icon": "react-icon.svg",
+    "icon": "./assets/react-icon.svg",
     "description": "This project was made with React js framework.",
     "category": "react",
     "link": "https://yalex95.github.io/web-app/",

@@ -48,7 +48,7 @@
           >
             <img
               class="w-14 h-14 mb-5 mx-auto"
-              :src="`/assets/${project.icon}`"
+              :src="`${project.icon}`"
               :alt="project.category"
             />
             <p class="name uppercase font-bold text-xl">{{ project.name }}</p>
@@ -60,7 +60,7 @@
             <div class="flex-col gap-5 flex">
               <img
                 class="w-14 h-14"
-                :src="`/assets/${project.icon}`"
+                :src="`${project.icon}`"
                 :alt="project.category"
               />
               <p class="name uppercase font-bold text-xl block md:hidden mb-4">

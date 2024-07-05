@@ -29,7 +29,7 @@
         class="text-left flex flex-col justify-center md:items-center text-white py-5 md:py-10 px-5 mx-10 md:mx-0 border-white border-2 rounded md:min-h-80 min-h-72"
       >
         <img
-          :src="`/assets/icons/${slide.icon}`"
+          :src="`${slide.icon}`"
           class="w-14 h-14"
           :alt="slide.skill"
         />
