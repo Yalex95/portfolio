@@ -1,10 +1,13 @@
 name: Build and Deploy
+
 on: 
   push:
     branches:
       - vue-migration
+
 permissions:
   contents: write
+
 jobs:
   build-and-deploy:
     concurrency: ci-${{ github.ref }}
@@ -15,6 +18,11 @@ jobs:
     steps:
     - name: Checkout 🛎️
       uses: actions/checkout@v3
+
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ matrix.node-version }}
 
     - name: Cache Node Modules 🗃️
       uses: actions/cache@v3
@@ -30,14 +38,15 @@ jobs:
     - name: Build Application 🏗️
       run: npm run build
       env:
-        NUXT_APP_BASE_URL: ${{ vars.NUXT_APP_BASE_URL  }}
+        NUXT_APP_BASE_URL: ${{ vars.NUXT_APP_BASE_URL }}
 
-    - name: Generate 🔧
+    - name: Generate Static Files 📄
       run: npm run generate
       env:
-        NUXT_APP_BASE_URL: ${{ vars.NUXT_APP_BASE_URL  }}
+        NUXT_APP_BASE_URL: ${{ vars.NUXT_APP_BASE_URL }}
 
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@v4
       with:
         folder: dist
+        clean: true  # Ensures old files are removed before deploying the new ones
