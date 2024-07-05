@@ -15,12 +15,9 @@ jobs:
         with:
           node-version: "20"
       # Pick your own package manager and build script
-      - run: npm install
-      - run: npx nuxt build --preset github_pages
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
-        with:
-          path: ./.output/public
+
+      - name: Build Nuxt app
+        run: npm run generate
   # Deployment job
   deploy:
     # Add a dependency to the build job
