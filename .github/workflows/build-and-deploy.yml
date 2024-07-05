@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   push:
     branches:
-      - main
+      - vue-migration
 jobs:
   build:
     runs-on: ubuntu-latest
