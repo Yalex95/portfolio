@@ -15,7 +15,7 @@
       <div
         class="btn-container mt-5 relative flex-row flex md:justify-center gap-2"
       >
-        <a href="/#contact" class="btn cursor-pointer z-10">{{
+        <a href="/portfolio/#contact" class="btn cursor-pointer z-10">{{
           $t("contactText")
         }}</a>
         <div class="click-here relative"></div>
