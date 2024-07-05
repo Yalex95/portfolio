@@ -10,7 +10,7 @@
 
         <div class="relative">
           <a
-            href="/pdf/Yeris_Aguilar_Cv.pdf"
+            href="./pdf/Yeris_Aguilar_Cv.pdf"
             target="_blank"
             class="btn-purple mt-3"
             >{{ $t("downloadTextBtn") }}</a

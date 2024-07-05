@@ -31,8 +31,8 @@ export default defineNuxtConfig({
        }
      },
   // Public runtime configuration
-  publicRuntimeConfig: {
-    baseURL: process.env.NUXT_APP_BASE_URL || "http://localhost:3000",
-  },
+  // publicRuntimeConfig: {
+  //   baseURL: process.env.NUXT_APP_BASE_URL || "http://localhost:3000",
+  // },
   devtools: { enabled: true },
 });
