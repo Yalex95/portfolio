@@ -27,7 +27,7 @@
     <SwiperSlide v-for="slide in techStack" :key="slide">
       <div  class="text-center flex flex-col justify-center items-center text-white py-10 px-5 ">
         <img
-          :src="`/assets/${slide.asset}`"
+          :src="`./assets/${slide.asset}`"
           class="w-30 h-30"
           :alt="slide.tech"
         />
