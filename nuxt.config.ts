@@ -23,16 +23,6 @@ export default defineNuxtConfig({
   },
   build: {
     publicPath: "/portfolio/_nuxt/",
-    filenames: {
-      app: ({ isDev }) => (isDev ? "[name].js" : "[chunkhash].js"),
-      chunk: ({ isDev }) => (isDev ? "[name].js" : "[chunkhash].js"),
-      css: ({ isDev }) => (isDev ? "[name].css" : "[contenthash].css"),
-      img: ({ isDev }) => (isDev ? "[path][name].[ext]" : "img/[hash:7].[ext]"),
-      font: ({ isDev }) =>
-        isDev ? "[path][name].[ext]" : "fonts/[hash:7].[ext]",
-      video: ({ isDev }) =>
-        isDev ? "[path][name].[ext]" : "videos/[hash:7].[ext]",
-    },
   },
   // Public runtime configuration
   // publicRuntimeConfig: {

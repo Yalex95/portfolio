@@ -45,6 +45,9 @@ jobs:
       env:
         NUXT_APP_BASE_URL: ${{ vars.NUXT_APP_BASE_URL }}
 
+    - name: Add .nojekyll to prevent GitHub Pages from ignoring files starting with an underscore
+      run: touch dist/.nojekyll
+
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@v4
       with:
