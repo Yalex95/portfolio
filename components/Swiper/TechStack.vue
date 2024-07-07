@@ -47,7 +47,7 @@ const techStack = [
     tech: "JavaScript",
   },
   {
-    asset: "vue_grey.svg",
+    asset: "Vue_grey.svg",
     tech: "Vue JS",
   },
   {

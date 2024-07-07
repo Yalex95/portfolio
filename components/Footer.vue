@@ -33,7 +33,7 @@
           </ul></div>
         <div class="hidden md:block md:w-1/3 lg:flex flex-col items-center">
           <p class="text-2xl font-semibold">Get Started TODAY!</p>
-          <a href="" class="btn-white mt-2 text-center"> contact me</a>
+          <a href="./#contact" class="btn-white mt-2 text-center"> contact me</a>
         </div>
       </div>
     </footer>
@@ -49,10 +49,26 @@ const navigation = [
 ];
 
 const links = [
-  { url: "", icon: "./assets/linkedIn.svg", alt: "LinkedIn icon" },
-  { url: "", icon: "./assets/email.svg", alt: "Email icon" },
-  { url: "", icon: "./assets/phone.svg", alt: "Phone icon" },
-  { url: "", icon: "./assets/github.svg", alt: "Github icon" },
+  {
+    url: "https://www.linkedin.com/in/yeris-aguilar/",
+    icon: "./assets/linkedin_nav.svg",
+    alt: "LinkedIn icon",
+  },
+  {
+    url: "mailto:yerisaguilar95@gmail.com",
+    icon: "./assets/email_nav.svg",
+    alt: "Email icon",
+  },
+  {
+    url: "tel:+529632337458",
+    icon: "./assets/phone_nav.svg",
+    alt: "Phone icon",
+  },
+  {
+    url: "https://github.com/Yalex95",
+    icon: "./assets/github_nav.svg",
+    alt: "Github icon",
+  },
 ];
 </script>
 <style>
