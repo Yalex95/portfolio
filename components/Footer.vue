@@ -9,9 +9,10 @@
 
           <ul class="social mt-3 hidden md:inline-flex">
             <li v-for="link in links" :key="link.alt">
-              <a :href="link.url" class="linkedin">
-                <img :src="link.icon" :alt="link.alt"
-              /></a>
+              <a :href="link.url" :style="`background-image: url(${link.icon});`" class="bg-white bg-no-repeat bg-center rounded bg-[length:30px_30px]" >
+                <!-- <img :src="link.icon" :alt="link.alt"
+              /> -->
+            </a>
             </li>
           </ul>
         </div>

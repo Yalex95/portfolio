@@ -171,7 +171,7 @@ ul.social li a {
   width: 43px;
   height: 43px;
   background-repeat: no-repeat;
-  background-size: contain;
+  /* background-size: contain; */
   transition: background ease-in-out 500ms;
 }
 .links ul li a:hover {
