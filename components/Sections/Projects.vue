@@ -21,7 +21,7 @@
       <div class="projects-filter">
         <button
           class="btn-purple-border"
-          :class="[params.category === 'all' ? 'active' : '']"
+          :class="[route.query.category === 'all' ? 'active' : '']"
           @click="onCatChange('all')"
         >
           All Projects
@@ -30,7 +30,7 @@
           v-for="(category, index) in uniqueCats"
           :key="index"
           class="btn-purple-border capitalize"
-          :class="[params.category === category ? 'active' : '']"
+          :class="[route.query.category === category ? 'active' : '']"
           @click="onCatChange(category)"
         >
           {{ category }}
@@ -103,20 +103,77 @@ import { ArrowLongRightIcon } from "@heroicons/vue/24/outline";
 const route = useRoute();
 const router = useRouter();
 
-let uniqueCats = await useFetchCategories();
 let params = ref({ category: "all" });
 
-const { data: filteredItems, refresh } = await useFetchProjects(params.value);
+// const { data: filteredItems, refresh } = await useFetchProjects(params.value);
+let projectsList = [
+  {
+    name: "TO-DO List",
+    icon: "./assets/react-icon.svg",
+    description:
+      "This project was made with Firebase real time data base and React js framework. *Adds TODO items to database *Delete TODO items to database *updates completed items",
+    category: "react",
+    link: "https://yalex95.github.io/TodoListCrud/",
+    github_link: "",
+    featured_img: "./assets/project.png",
+  },
+  {
+    name: "Portfolio",
+    icon: "./assets/vue.svg",
+    description: "This project was made with Nuxt 3 js framework.",
+    category: "vue",
+    link: "https://yalex95.github.io/portfolio/",
+    github_link: "https://github.com/Yalex95/portfolio",
+    featured_img: "./assets/portafolio-featured-img.jpg",
+  },
+  {
+    name: "Budget Controller",
+    icon: "./assets/react-icon.svg",
+    description: "This project was made with React js framework.",
+    category: "react",
+    link: "https://yalex95.github.io/budget/",
+    github_link: "https://github.com/Yalex95/budget",
+    featured_img: "./assets/project.png",
+  },
+  {
+    name: "Anime Rest API",
+    icon: "./assets/react-icon.svg",
+    description: "This project was made with React js framework.",
+    category: "react",
+    link: "https://yalex95.github.io/web-app/",
+    github_link: "https://github.com/Yalex95/web-app",
+    featured_img: "./assets/project.png",
+  },
+];
+let filteredItems = ref([]);
+
+let uniqueCats = [...new Set(projectsList.map((obj) => obj.category))];
+
+const getProjects = (cat) => {
+  console.log(cat);
+  if (cat && cat != "all") {
+    console.log("different");
+    filteredItems.value = projectsList.filter((project) => {
+      return project.category == cat.toLowerCase();
+    });
+  } else {
+    filteredItems.value = projectsList;
+  }
+};
+
+getProjects(route.query.category || "all");
+
 
 const onCatChange = (cat) => {
+  console.log(cat);
   params.value.category = cat;
   router.push({
     query: {
       category: cat,
     },
   });
+  getProjects(cat);
 };
-// TODO: add slider settings to cards
 </script>
 <style>
 #projects .container h4 {
