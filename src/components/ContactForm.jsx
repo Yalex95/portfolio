@@ -31,9 +31,9 @@ export const ContactUs = () => {
       return;
     }
      //form variables
-     const serviceId='service_omp692l';
-     const templateId = 'template_uz1g9nq';
-     const publicKey = 'BaZ9p5ykE2CDxA82g';
+     const serviceId='';
+     const templateId = '';
+     const publicKey = '';
      
      emailjs.sendForm(serviceId, templateId, form.current, publicKey)
      .then((result) => {
